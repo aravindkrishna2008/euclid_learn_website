@@ -38,7 +38,6 @@ const Hero = () => {
           View Pricing
         </div>
       </div>
-      s
     </div>
   );
 };
