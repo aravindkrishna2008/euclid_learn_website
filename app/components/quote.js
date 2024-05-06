@@ -1,6 +1,6 @@
 const Quote = () => {
   return (
-    <div className="bg-[#F7F9FC] py-[10vw] flex flex-col items-center justify-center">
+    <div className="bg-[#F7F9FC] px-[6.25vw] py-[10vw] flex flex-col items-center justify-center">
       <div className="flex flex-col text-center justify-center items-center">
         <img src="/icons/smiley_group.svg" className="w-[23vw]" alt="quote" />
         <h1 className="text-[2.8125vw] font-semibold text-[#25272C] tracking-[-0.06vw] leading-[115%]">
