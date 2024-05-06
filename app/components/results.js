@@ -1,6 +1,6 @@
 const Results = () => {
   return (
-    <div className="w-full bg-[#25272c] h-[85vh] relative overflow-hidden flex items-center justify-center mb-[10vw]">
+    <div className="w-full bg-[#25272c] h-[85vh] relative overflow-hidden flex items-center justify-center ">
       <img
         src="/gridGray.png"
         alt="hero"
@@ -12,8 +12,8 @@ const Results = () => {
             View our Results
           </h1>
           <p className="text-[1.25vw] text-white font-light mt-[1.25vw] w-[30vw] tracking-[0.16px] text-center">
-            Discover the Results We've Delivered So Far. Our Achievements Speak
-            for Themselves.
+            Discover the Results We&apos;ve Delivered So Far. Our Achievements
+            Speak for Themselves.
           </p>
         </div>
         <div className="flex flex-row mt-[4vw] gap-[1.25vw] justify-between">

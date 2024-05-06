@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import HeroCarousel from "./components/HeroCarousel/heroCarousel";
 import WhyEuclid from "./components/whyEuclid";
 import Results from "./components/results";
+import Quote from "./components/quote";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <WhyEuclid />
       <Results />
+      <Quote />
     </div>
   );
 }

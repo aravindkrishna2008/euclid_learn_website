@@ -18,8 +18,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex flex-row">
-        {pages.map((page) => (
-          <div className="py-[0.625vw] px-[0.9375vw] text-neutral-400 text-[1.09375vw]">
+        {pages.map((page, index) => (
+          <div
+            key={index}
+            className="py-[0.625vw] px-[0.9375vw] text-neutral-400 text-[1.09375vw]"
+          >
             <Link href={page.path}>{page.name}</Link>
           </div>
         ))}
