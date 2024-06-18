@@ -40,44 +40,48 @@ const Faq = () => {
   };
 
   return (
-    <div className="mx-auto mt-[5vw] mb-[5vw]  bg-white rounded-[2vw] w-[65vw] p-[2.5vw]">
-      <h2 className="text-[2.8vw] font-bold mb-6 text-[#25272C] mb-[3.125vw]">
+    <div className="mx-auto mt-[5vw] mb-[5vw]  bg-white rounded-[2vw] w-[90vw] sm:w-[65vw] p-[5vw] sm:p-[2.5vw]">
+      <h2 className="sm:text-[2.8vw] text-[7.5vw] font-bold text-[#25272C] mb-[3.125vw]">
         Frequently Asked Questions
       </h2>
 
-      {faqData.map((item, index) => (
-        <div key={index} className="mb-[3.125vw]">
-          <button
-            onClick={() => toggle(index)}
-            className="flex justify-between items-center w-full text-left font-medium"
-          >
-            <span className="text-[1.25vw] font-light text-[#383A42]">
-              {item.question}
-            </span>
-            <svg
-              className={`w-5 h-5 text-[#3958F2] transform transition-transform ${
-                open === index ? "rotate-180" : ""
-              }`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+      <div className="flex flex-col gap-[4vw] sm:gap-0">
+        {faqData.map((item, index) => (
+          <div key={index} className="mb-[3.125vw]">
+            <button
+              onClick={() => toggle(index)}
+              className="flex justify-between items-center w-full text-left font-medium"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          {open === index && (
-            <div className="mt-2 font-light text-[#8E95A2] w-[90%] leading-[170%]">
-              {item.answer}
-            </div>
-          )}
-        </div>
-      ))}
+              <span className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42]">
+                {item.question}
+              </span>
+              <div className="w-[6vw] sm:w-5">
+                <svg
+                  className={`sm:w-5 sm:h-5 w-[6vw] h-[6vw] text-[#3958F2] transform transition-transform ${
+                    open === index ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            {open === index && (
+              <div className="mt-2 text-[3vw] sm:text-[1.125vw] font-light text-[#8E95A2] w-[90%] leading-[170%]">
+                {item.answer}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

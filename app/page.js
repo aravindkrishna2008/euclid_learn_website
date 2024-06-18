@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="">
       <Navbar handleClick={handleClick} />
-      <div className="px-[6.25vw]">
+      <div className="sm:px-[6.25vw]">
         <Hero />
         <HeroCarousel />
       </div>
