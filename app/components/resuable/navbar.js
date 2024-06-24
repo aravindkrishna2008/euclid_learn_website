@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 
-const Navbar = ({ freeTutoringRefClick, teacherClick }) => {
+const Navbar = ({ teacherClick, pricerefclick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = ({ freeTutoringRefClick, teacherClick }) => {
     { name: "ACT", path: "/act" },
     { name: "AIME", path: "/aime" },
     { name: "USACO", path: "/usaco" },
-    { name: "PRICING", path: "/pricing", onClick: freeTutoringRefClick },
+    { name: "PRICING", path: "/pricing", onClick: pricerefclick },
     { name: "TEACHERS", path: "/teachers", onClick: teacherClick },
   ];
 
