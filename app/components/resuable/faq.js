@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
 
-
 const Faq = () => {
   const [open, setOpen] = useState(null);
 
@@ -22,7 +21,7 @@ const Faq = () => {
       question:
         "How do you keep parents/guardians informed about their child's progress?",
       answer:
-        "We keep parents/guardians informed through regular progress reports, parent-teacher meetings, and an online portal where they can track their child's performance.",
+        "We keep parents/guardians informed through regular progress reports, parent-teacher meetings, and an online portal where they can track their child';;s performance.",
     },
     {
       question:

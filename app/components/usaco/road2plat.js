@@ -7,8 +7,8 @@ const Road2Plat = () => {
         The Road to USACO Platinum
       </h1>
       <p className="sm:w-[30vw] w-[80vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw] text-center font-light ">
-        Explore what you'll learn on this journey. Knowing the path helps you
-        navigate it.
+        Explore what you&apos;ll learn on this journey. Knowing the path helps
+        you navigate it.
       </p>
       <div className="flex w-[100%] justify-between flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
         <div className="bg-[#0F0F0F] rounded-[1.25vw] flex flex-col justify-center items-center text-center p-[10vw] sm:p-0 sm:py-[3.75vw] flex-grow">
@@ -71,7 +71,7 @@ const Road2Plat = () => {
           >
             At the gold level, students learn data structures like Fenwick
             Trees, Disjoint Set Unions, and more, along with famous algorithms
-            like Dijkstra's Algo.
+            like Dijkstra&apos;s Algo.
           </p>
         </div>
         <div className="bg-[#0F0F0F] rounded-[1.25vw] flex flex-col justify-center items-center text-center p-[10vw] sm:p-0 sm:py-[3.75vw] flex-grow">
