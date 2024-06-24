@@ -7,6 +7,7 @@ const About = () => {
         width={10000}
         height={10000}
         src="/icons/general_icons/block.gif"
+        unoptimized
         className="sm:w-[25vw] w-[50vw]"
       />
       <div className="flex flex-col">

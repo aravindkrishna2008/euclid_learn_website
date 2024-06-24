@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 
-const Navbar = () => {
+const Navbar = ({ freeTutoringRefClick, teacherClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -15,8 +15,8 @@ const Navbar = () => {
     { name: "ACT", path: "/act" },
     { name: "AIME", path: "/aime" },
     { name: "USACO", path: "/usaco" },
-    { name: "PRICING", path: "/pricing" },
-    { name: "TEACHERS", path: "/teachers" },
+    { name: "PRICING", path: "/pricing", onClick: freeTutoringRefClick },
+    { name: "TEACHERS", path: "/teachers", onClick: teacherClick },
   ];
 
   useEffect(() => {
@@ -43,13 +43,18 @@ const Navbar = () => {
     setIsAnimating(false);
   };
 
+  const handleLinkClick = (onClick) => {
+    if (onClick) {
+      onClick();
+      setIsOpen(false); // Close the menu if it was open
+    }
+  };
+
   return (
     <div
-      className={`flex flex-row  text-[1.09375vw] font-semibold justify-between items-center py-[5vw] sm:py-[1.5vw] bg-white px-[6.25vw] w-[100%] z-20 transition-all duration-300 ease-in-out ${
+      className={`flex flex-row text-[1.09375vw] font-semibold justify-between items-center py-[5vw] sm:py-[1.5vw] bg-white px-[6.25vw] w-[100%] z-20 transition-all duration-300 ease-in-out ${
         isSticky ? "fixed shadow-md top-0 translate-y-0" : "relative"
-      }
-        ${isNavGone ? "-translate-y-full" : ""}
-        `}
+      } ${isNavGone ? "-translate-y-full" : ""}`}
     >
       <div className="py-[0.625vw] hover:scale-105 transition-all duration-200 px-[0.9375vw] text-neutral-400">
         <Link href="/">
@@ -68,8 +73,13 @@ const Navbar = () => {
             <div
               key={index}
               className="py-[0.625vw] px-[0.9375vw] hover:text-neutral-600 transition-all hover:-translate-y-1 duration-200 text-neutral-400 text-[1.09375vw]"
+              onClick={() => handleLinkClick(page.onClick)}
             >
-              <Link href={page.path}>{page.name}</Link>
+              {page.onClick ? (
+                <span>{page.name}</span>
+              ) : (
+                <Link href={page.path}>{page.name}</Link>
+              )}
             </div>
           ))}
         </div>
@@ -82,16 +92,24 @@ const Navbar = () => {
       </p>
       {isOpen && (
         <div
-          className={`absolute top-[15vw]  left-0 w-full bg-white z-10 flex flex-col items-center md:hidden ${
+          className={`absolute top-[15vw] left-0 w-full bg-white z-10 flex flex-col items-center md:hidden ${
             isOpen ? "animate-slide-down" : "animate-slide-up "
           } ${isAnimating ? "animating" : ""}`}
           onAnimationEnd={handleAnimationEnd}
         >
           {pages.map((page, index) => (
-            <div key={index} className="py-4 text-neutral-400 text-[4vw]">
-              <Link href={page.path} onClick={toggleMenu}>
-                {page.name}
-              </Link>
+            <div
+              key={index}
+              className="py-4 text-neutral-400 text-[4vw]"
+              onClick={() => handleLinkClick(page.onClick)}
+            >
+              {page.onClick ? (
+                <span>{page.name}</span>
+              ) : (
+                <Link href={page.path} onClick={toggleMenu}>
+                  {page.name}
+                </Link>
+              )}
             </div>
           ))}
           <p className="text-[#3958F2] cursor-pointer hover:text-[#3a50bb] text-[4vw] font-semibold py-4">

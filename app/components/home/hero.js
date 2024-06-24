@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Hero = ({ handleClick }) => {
+const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
     <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center">
       <div className="p-[2vw] relative">
@@ -43,14 +43,14 @@ const Hero = ({ handleClick }) => {
       <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[3vw] gap-[2vw] sm:gap-[0.9375vw]">
         <div
           className="sm:text-[1.09375vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white"
-          onClick={() => {
-            console.log("clicked");
-            handleClick;
-          }}
+          onClick={freeTutoringRefClick}
         >
           Claim 1-Hour Free Tutoring
         </div>
-        <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#3958F2] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#3958F2] rounded-full">
+        <div
+          onClick={pricerefclick}
+          className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#3958F2] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#3958F2] rounded-full"
+        >
           View Pricing
         </div>
       </div>

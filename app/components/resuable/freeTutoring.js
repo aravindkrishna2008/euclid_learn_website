@@ -35,7 +35,7 @@ const FreeTutoring = ({ handleClick }) => {
             </p>
           </div>
         </div>
-        <div className="bg-[#4766FF] mt-[5vw] sm:mt-0 sm:w-[40vw] p-[5vw] sm:p-[2.5vw] flex flex-col gap-[2vw] rounded-[1.875vw]">
+        <div className="bg-[#4766FF] mt-[5vw] sm:mt-0 sm:w-[80vw] p-[5vw] sm:p-[2.5vw] flex flex-col gap-[2vw] rounded-[1.875vw]">
           <input
             type="text"
             placeholder="Student Name"

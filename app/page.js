@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { useRef } from "react";
 
 import Navbar from "./components/resuable/navbar";
@@ -16,26 +15,70 @@ import FreeTutoring from "./components/resuable/freeTutoring";
 import Footer from "./components/resuable/footer";
 
 export default function Home() {
-  const ref = useRef(null);
+  const freeTutoringRef = useRef(null);
+  const priceRef = useRef(null);
+  const teacherRef = useRef(null);
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const freeTutoringRefClick = () => {
+    console.log("clicked");
+    freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const pricerefclick = () => {
+    console.log("clicked");
+    priceRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const teacherClick = () => {
+    console.log("clicked");
+    teacherRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className="">
-      <Navbar handleClick={handleClick} />
+      <Navbar
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+        teacherClick={teacherClick}
+      />
       <div className="sm:px-[6.25vw]">
-        <Hero />
-        <HeroCarousel />
+        <Hero
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+        />
+        <HeroCarousel
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+        />
       </div>
-      <WhyEuclid handleClick={handleClick} />
-      <Results handleClick={handleClick} />
-      <Quote handleClick={handleClick} />
-      <Pricing handleClick={handleClick} />
-      <Teachers handleClick={handleClick} />
+      <WhyEuclid
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
+      <Results
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
+      <Quote
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
+      <div ref={priceRef}></div>
+      <Pricing
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
+      <div ref={teacherRef}></div>
+      <Teachers
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
       <Faq />
-      <div ref={ref}></div>
+      <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
       <FreeTutoring />
       <Footer />
     </div>

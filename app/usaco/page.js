@@ -16,26 +16,56 @@ import TwoPrinciples from "../components/usaco/twoPrinciples";
 import HowItWorks from "../components/usaco/howitworks";
 
 export default function USACO() {
-  const ref = useRef(null);
+  const freeTutoringRef = useRef(null);
+  const priceRef = useRef(null);
+  const teacherRef = useRef(null);
+  const freeTutoringRefClick = () => {
+    console.log("clicked");
+    freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const pricerefclick = () => {
+    console.log("clicked");
+    priceRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const teacherClick = () => {
+    console.log("clicked");
+    teacherRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className="">
-      <Navbar handleClick={handleClick} />
+      <Navbar
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+        teacherClick={teacherClick}
+      />{" "}
       <Hero />
       <About />
       <Road2Plat />
       <TwoPrinciples />
       <HowItWorks />
-      <Results handleClick={handleClick} />
-      <Quote handleClick={handleClick} />
-      <Pricing handleClick={handleClick} />
-      <Teachers handleClick={handleClick} />
+      <Results
+        freeTutoringRefClick={freeTutoringRefClick}
+      />
+      <Quote
+        freeTutoringRefClick={freeTutoringRefClick}
+      />
+      <div ref={priceRef}></div>
+      <Pricing
+        freeTutoringRefClick={freeTutoringRefClick}
+      />
+      <div ref={teacherRef}></div>
+      <Teachers
+        freeTutoringRefClick={freeTutoringRefClick}
+      />
       <Faq />
-      <div ref={ref}></div>
+      <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
       <FreeTutoring />
       <Footer />
     </div>
