@@ -7,7 +7,7 @@ const Quote = () => {
         <Image
           width={10000}
           height={10000}
-          src="/icons/smiley_group.svg"
+          src="/icons/smiley/smiley_group.svg"
           className="sm:w-[23vw] w-[70vw]"
           alt="quote"
         />
@@ -25,7 +25,7 @@ const Quote = () => {
             <Image
               width={10000}
               height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
@@ -59,7 +59,7 @@ const Quote = () => {
             <Image
               width={10000}
               height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
@@ -92,7 +92,7 @@ const Quote = () => {
             <Image
                   width={10000}
                   height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
@@ -126,7 +126,7 @@ const Quote = () => {
             <Image
                   width={10000}
                   height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
@@ -159,7 +159,7 @@ const Quote = () => {
             <Image
                   width={10000}
                   height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
@@ -193,7 +193,7 @@ const Quote = () => {
             <Image
                   width={10000}
                   height={10000}
-              src="/icons/quote.svg"
+              src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">

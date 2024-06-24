@@ -10,28 +10,28 @@ const Hero = ({ handleClick }) => {
         <Image
           width={10000}
           height={10000}
-          src="/icons/smile_blue.svg"
+          src="/icons/smiley/smile_blue.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[-0.5vw] left-[9vw] -z-10"
         />
         <Image
           width={10000}
           height={10000}
-          src="/icons/smile_yellow.svg"
+          src="/icons/smiley/smile_yellow.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] left-[-1vw]"
         />
         <Image
           width={10000}
           height={10000}
-          src="/icons/smile_orange.svg"
+          src="/icons/smiley/smile_orange.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] right-[-1vw] -z-10"
         />
         <Image
           width={10000}
           height={10000}
-          src="/icons/smile_yellow.svg"
+          src="/icons/smiley/smile_yellow.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[0vw] right-[18vw]"
         />

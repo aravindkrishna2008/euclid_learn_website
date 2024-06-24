@@ -6,7 +6,7 @@ const About = () => {
       <Image
         width={10000}
         height={10000}
-        src="/block.gif"
+        src="/icons/general_icons/block.gif"
         className="sm:w-[25vw] w-[50vw]"
       />
       <div className="flex flex-col">

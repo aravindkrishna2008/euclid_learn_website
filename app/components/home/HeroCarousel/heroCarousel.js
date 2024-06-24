@@ -7,7 +7,7 @@ import Image from "next/image";
 const HeroCarousel = () => {
   const items = [
     {
-      image: "/hero_carousol_img_1.jpeg",
+      image: "/stock_image/home/hero_carousol_img_1.jpeg",
       name: "Excel in AIME",
       description:
         "Master the challenging American Invitational Mathematics Examination (AIME) with specialized coaching and problem-solving techniques.",

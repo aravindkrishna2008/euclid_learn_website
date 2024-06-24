@@ -15,7 +15,7 @@ const Road2Plat = () => {
           <Image
             width={10000}
             height={10000}
-            src="/bronze.svg"
+            src="/icons/medals/bronze.svg"
             className="sm:w-[4.375vw] w-[10vw]"
           />
           <p className="sm:text-[1.4vw] text-[5vw] mt-[0.625vw] bronzeMedal font-semibold">
@@ -36,7 +36,7 @@ const Road2Plat = () => {
           <Image
             width={10000}
             height={10000}
-            src="/silver.svg"
+            src="/icons/medals/silver.svg"
             className="sm:w-[4.375vw] w-[10vw]"
           />
           <p className="sm:text-[1.4vw] text-[5vw] mt-[0.625vw] silverMedal font-semibold">
@@ -57,7 +57,7 @@ const Road2Plat = () => {
           <Image
             width={10000}
             height={10000}
-            src="/gold.svg"
+            src="/icons/medals/gold.svg"
             className="sm:w-[4.375vw] w-[10vw]"
           />
           <p className="sm:text-[1.4vw] text-[5vw] mt-[0.625vw] goldMedal font-semibold">
@@ -78,7 +78,7 @@ const Road2Plat = () => {
           <Image
             width={10000}
             height={10000}
-            src="/platinum.svg"
+            src="/icons/medals/platinum.svg"
             className="sm:w-[4.375vw] w-[10vw]"
           />
           <p className="sm:text-[1.4vw] text-[5vw] mt-[0.625vw] platinumMedal font-semibold">

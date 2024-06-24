@@ -13,9 +13,7 @@ const Teachers = () => {
       </p>
       <div className="flex flex-col sm:flex-row gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <Image
-        width={10000}
-        height={10000} src="/Anirudh.png" />
+          <Image width={10000} height={10000} src="/team/Anirudh.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Anirudh Shyam
@@ -29,9 +27,7 @@ const Teachers = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <Image
-        width={10000}
-        height={10000} src="/Woojin.png" />
+          <Image width={10000} height={10000} src="/team/Woojin.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Woojin Yoon
@@ -45,9 +41,7 @@ const Teachers = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <Image
-        width={10000}
-        height={10000} src="/Abhinav.png" />
+          <Image width={10000} height={10000} src="/team/Abhinav.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Abhinav Raja

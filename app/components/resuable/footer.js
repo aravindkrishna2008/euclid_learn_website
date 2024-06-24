@@ -23,7 +23,7 @@ const Footer = () => {
       <Image
         width={10000}
         height={10000}
-        src="/icons/footer.svg"
+        src="/icons/smiley/footer.svg"
         className="w-[40vw] z-30 absolute right-[8vw] bottom-0 mt-[5vw]"
       />
       <div className="absolute bottom-[5.8vw]">

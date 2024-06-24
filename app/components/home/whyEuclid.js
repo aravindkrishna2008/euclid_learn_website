@@ -23,7 +23,7 @@ const WhyEuclid = () => {
           <Image
             width={10000}
             height={10000}
-            src="/icons/computer.svg"
+            src="/icons/general_icons/computer.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">
@@ -42,7 +42,7 @@ const WhyEuclid = () => {
           <Image
             width={10000}
             height={10000}
-            src="/icons/brain.svg"
+            src="/icons/general_icons/brain.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">
@@ -61,7 +61,7 @@ const WhyEuclid = () => {
           <Image
             width={10000}
             height={10000}
-            src="/icons/community.svg"
+            src="/icons/general_icons/community.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">

@@ -42,7 +42,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 Student</p>
@@ -51,7 +51,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">Gold Mentor</p>
@@ -60,7 +60,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 officer hour/week</p>
@@ -98,7 +98,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 Student</p>
@@ -107,7 +107,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">Platinum Mentor</p>
@@ -116,7 +116,7 @@ const Pricing = () => {
                 <Image
                   width={10000}
                   height={10000}
-                  src="/icons/check-circle.svg"
+                  src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 officer hour/week</p>

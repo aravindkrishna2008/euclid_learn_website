@@ -6,14 +6,14 @@ const TwoPrinciples = () => {
       <Image
         width={10000}
         height={10000}
-        src="/blue_yellow_smile.svg"
+        src="/icons/smiley/blue_yellow_smile.svg"
         alt="blue yellow smile"
         className="w-[10vw] h-[10vw] object-cover top-[2vw] -rotate-12 right-0 absolute"
       />
       <Image
         width={10000}
         height={10000}
-        src="/blue_yellow_smile.svg"
+        src="/icons/smiley/blue_yellow_smile.svg"
         alt="blue yellow smile"
         className="w-[10vw] h-[10vw] object-cover bottom-0  left-[4vw] absolute"
       />
@@ -28,7 +28,7 @@ const TwoPrinciples = () => {
           <Image
             width={10000}
             height={10000}
-            src="/user.svg"
+            src="/icons/general_icons/user.svg"
             alt="blue yellow smile"
             className="sm:w-[3.75vw] sm:h-[3.75vw] sm:block hidden object-cover"
           />
@@ -45,7 +45,7 @@ const TwoPrinciples = () => {
           <Image
             width={10000}
             height={10000}
-            src="/medal.svg"
+            src="/icons/general_icons/medal.svg"
             alt="blue yellow smile"
             className="sm:w-[3.75vw] sm:h-[3.75vw] sm:block hidden object-cover"
           />

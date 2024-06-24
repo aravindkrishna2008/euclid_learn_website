@@ -6,7 +6,7 @@ const Hero = () => {
       <Image
         width={10000}
         height={10000}
-        src="/usaco_hero.png"
+        src="/stock_image/usaco/usaco_hero.png"
         alt="usaco hero"
         className="h-[85vh] w-[100%] object-cover"
       />
