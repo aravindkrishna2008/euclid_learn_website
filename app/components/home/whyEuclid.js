@@ -15,7 +15,7 @@ const WhyEuclid = () => {
       <Image
         width={10000}
         height={10000}
-        src="/smiley_yellow_blue.png"
+        src="/icons/smiley/smiley_yellow_blue.png"
         className="sm:w-[41vw] w-[80vw] mt-[7vw]"
       />
       <div className="flex flex-col sm:flex-row mt-[12vw] gap-[1.25vw]">
