@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 import CarouselItem from "./carouselItem";
+import Image from "next/image";
 
 const HeroCarousel = () => {
   const items = [
@@ -33,7 +34,9 @@ const HeroCarousel = () => {
 
   return (
     <div className="w-full bg-[#3958F2] sm:h-[70vh] py-[5vh] sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw]">
-      <img
+      <Image
+        width={10000}
+        height={10000}
         src="/gridBlue.png"
         alt="hero"
         className="absolute inset-0 w-full h-full object-cover rounded-3xl z-0 opacity-20"

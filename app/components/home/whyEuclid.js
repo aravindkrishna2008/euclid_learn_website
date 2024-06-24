@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WhyEuclid = () => {
   return (
     <div className="bg-[#F7F2DF] px-[6.25vw] py-[10vw] flex items-center flex-col">
@@ -10,10 +12,17 @@ const WhyEuclid = () => {
       <p className="sm:w-[27vw] w-[80vw] text-[4vw] font-light text-center mt-[2vw] sm:mt-[1vw] sm:text-[1.25vw]">
         Receive exclusive one-on-one mentoring from our award-winning coaches.
       </p>
-      <img src="smiley_yellow_blue.png" className="sm:w-[41vw] w-[80vw] mt-[7vw]" />
+      <Image
+        width={10000}
+        height={10000}
+        src="/smiley_yellow_blue.png"
+        className="sm:w-[41vw] w-[80vw] mt-[7vw]"
+      />
       <div className="flex flex-col sm:flex-row mt-[12vw] gap-[1.25vw]">
         <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
-          <img
+          <Image
+            width={10000}
+            height={10000}
             src="/icons/computer.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
@@ -30,7 +39,9 @@ const WhyEuclid = () => {
           </div>
         </div>
         <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
-          <img
+          <Image
+            width={10000}
+            height={10000}
             src="/icons/brain.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
@@ -47,7 +58,9 @@ const WhyEuclid = () => {
           </div>
         </div>
         <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
-          <img
+          <Image
+            width={10000}
+            height={10000}
             src="/icons/community.svg"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />

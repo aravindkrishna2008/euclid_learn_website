@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const FreeTutoring = ({ handleClick }) => {
   return (
     <div className="bg-[#3958F2] py-[10vw] px-[6.25vw]">
@@ -11,13 +13,23 @@ const FreeTutoring = ({ handleClick }) => {
           </p>
 
           <div className="flex flex-row mt-[1.25vw] items-center">
-            <img className="sm:w-[1.875vw] w-[5vw]" src="/icons/mail.svg" />
+            <Image
+              width={10000}
+              height={10000}
+              className="sm:w-[1.875vw] w-[5vw]"
+              src="/icons/mail.svg"
+            />
             <p className="text-white font-light ml-[1.25vw] text-[3vw]  sm:text-[1.25vw] ">
               contact@euclidlearn.com
             </p>
           </div>
           <div className="flex flex-row mt-[0.3vw] items-center">
-            <img className="sm:w-[1.875vw] w-[5vw]" src="/icons/phone.svg" />
+            <Image
+              width={10000}
+              height={10000}
+              className="sm:w-[1.875vw] w-[5vw]"
+              src="/icons/phone.svg"
+            />
             <p className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw] ">
               +1 408-706-6234
             </p>

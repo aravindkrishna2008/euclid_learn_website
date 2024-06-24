@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Hero = ({ handleClick }) => {
   return (
     <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center">
@@ -5,22 +7,30 @@ const Hero = ({ handleClick }) => {
         <h1 className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]">
           Student Oriented Academic Coaching
         </h1>
-        <img
+        <Image
+          width={10000}
+          height={10000}
           src="/icons/smile_blue.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[-0.5vw] left-[9vw] -z-10"
         />
-        <img
+        <Image
+          width={10000}
+          height={10000}
           src="/icons/smile_yellow.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] left-[-1vw]"
         />
-        <img
+        <Image
+          width={10000}
+          height={10000}
           src="/icons/smile_orange.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] right-[-1vw] -z-10"
         />
-        <img
+        <Image
+          width={10000}
+          height={10000}
           src="/icons/smile_yellow.svg"
           alt="hero"
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[0vw] right-[18vw]"

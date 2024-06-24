@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-[#25272C] px-[10vw] h-[45vw]  py-[5vw] relative">
@@ -18,7 +20,9 @@ const Footer = () => {
           <p>Terms and Conditions</p>
         </div>
       </div>
-      <img
+      <Image
+        width={10000}
+        height={10000}
         src="/icons/footer.svg"
         className="w-[40vw] z-30 absolute right-[8vw] bottom-0 mt-[5vw]"
       />
@@ -26,9 +30,14 @@ const Footer = () => {
         <h1 className="text-[2.8vw] text-white font-semibold w-[32vw] leading-[115%]">
           Providing Guidance, One Student at a Time
         </h1>
-        <img src="/logo/logo2.svg" className="w-[7.5vw] mt-[2vw]" />
+        <Image
+          width={10000}
+          height={10000}
+          src="/logo/logo2.svg"
+          className="w-[7.5vw] mt-[2vw]"
+        />
         <p className="mt-[2vw] text-white text-[0.8vw]">
-           Webpage created by Aravindkrishna Arivudainambi
+          Webpage created by Aravindkrishna Arivudainambi
         </p>
       </div>
     </footer>

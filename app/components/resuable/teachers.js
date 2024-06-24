@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Teachers = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center py-[10vw] px-[17vw]">
@@ -11,7 +13,9 @@ const Teachers = () => {
       </p>
       <div className="flex flex-col sm:flex-row gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <img src="/Anirudh.png" />
+          <Image
+        width={10000}
+        height={10000} src="/Anirudh.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Anirudh Shyam
@@ -25,7 +29,9 @@ const Teachers = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <img src="/Woojin.png" />
+          <Image
+        width={10000}
+        height={10000} src="/Woojin.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Woojin Yoon
@@ -39,7 +45,9 @@ const Teachers = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
-          <img src="/Abhinav.png" />
+          <Image
+        width={10000}
+        height={10000} src="/Abhinav.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Abhinav Raja

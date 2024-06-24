@@ -3,17 +3,17 @@ import Image from "next/image";
 
 import { useRef } from "react";
 
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import HeroCarousel from "./components/HeroCarousel/heroCarousel";
-import WhyEuclid from "./components/whyEuclid";
-import Results from "./components/results";
-import Quote from "./components/quote";
-import Pricing from "./components/pricing";
-import Teachers from "./components/teachers";
-import Faq from "./components/faq";
-import FreeTutoring from "./components/freeTutoring";
-import Footer from "./components/footer";
+import Navbar from "./components/resuable/navbar";
+import Hero from "./components/home/hero";
+import HeroCarousel from "./components/home/HeroCarousel/heroCarousel";
+import WhyEuclid from "./components/home/whyEuclid";
+import Results from "./components/resuable/results";
+import Quote from "./components/resuable/quote";
+import Pricing from "./components/resuable/pricing";
+import Teachers from "./components/resuable/teachers";
+import Faq from "./components/resuable/faq";
+import FreeTutoring from "./components/resuable/freeTutoring";
+import Footer from "./components/resuable/footer";
 
 export default function Home() {
   const ref = useRef(null);

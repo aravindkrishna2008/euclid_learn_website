@@ -1,7 +1,11 @@
+import Image from "next/image";
+
 const CarousolItem = ({ image, name, description }) => {
   return (
     <div className="flex flex-col sm:flex-row gap-[3vw] z-10">
-      <img
+      <Image
+        width={10000}
+        height={10000}
         src={image}
         className="sm:w-[32.5vw] sm:h-[32.5vw] w-[80vw] h-[80vw] object-cover rounded-lg"
       />

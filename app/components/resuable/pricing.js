@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Pricing = () => {
   return (
     <div className="bg-[#3958F2] px-[6.25vw] py-[9.3vw] flex flex-col items-center justify-center">
@@ -37,21 +39,27 @@ const Pricing = () => {
             />
             <div className="flex flex-col text-[3vw] sm:text-[1.15vw]">
               <div className="flex flex-row items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 Student</p>
               </div>
               <div className="flex flex-row items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">Gold Mentor</p>
               </div>
               <div className="flex flex-row items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
@@ -87,21 +95,27 @@ const Pricing = () => {
             />
             <div className="flex flex-col text-[3vw] sm:text-[1.15vw]">
               <div className="flex flex-row  items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">1 Student</p>
               </div>
               <div className="flex flex-row items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />
                 <p className=" ml-[1.15vw] font-light">Platinum Mentor</p>
               </div>
               <div className="flex flex-row items-center">
-                <img
+                <Image
+                  width={10000}
+                  height={10000}
                   src="/icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
                 />

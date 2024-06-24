@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Image from "next/image";
+
 
 const Faq = () => {
   const [open, setOpen] = useState(null);

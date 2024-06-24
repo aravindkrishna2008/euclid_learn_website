@@ -1,8 +1,16 @@
+import Image from "next/image";
+
 const Quote = () => {
   return (
     <div className="bg-[#F7F9FC] px-[6.25vw] py-[10vw] flex flex-col items-center justify-center">
       <div className="flex flex-col text-center justify-center items-center">
-        <img src="/icons/smiley_group.svg" className="sm:w-[23vw] w-[70vw]" alt="quote" />
+        <Image
+          width={10000}
+          height={10000}
+          src="/icons/smiley_group.svg"
+          className="sm:w-[23vw] w-[70vw]"
+          alt="quote"
+        />
         <h1 className="sm:text-[2.8125vw] text-[8vw] w-[80vw] font-semibold text-[#25272C] tracking-[-0.06vw] leading-[115%]">
           Our Happy Student
         </h1>
@@ -14,7 +22,12 @@ const Quote = () => {
       <div className="flex flex-col sm:flex-row mt-[5vw] gap-[1.25vw] justify-between">
         <div className="flex flex-col  justify-center gap-[1.25vw]">
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+              width={10000}
+              height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn has done an excellent job of solidifying my
               daughter&apos;s understanding of calculus. My daughter
@@ -26,8 +39,10 @@ const Quote = () => {
               environment throughout the summer.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                width={10000}
+                height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">
@@ -41,7 +56,12 @@ const Quote = () => {
             </div>
           </div>
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+              width={10000}
+              height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn helped me develop a strategic plan to navigate high
               school by clarifying what I should prioritize. Through
@@ -50,8 +70,10 @@ const Quote = () => {
               grades, time management, and confidence in my abilities.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                  width={10000}
+                  height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">
@@ -67,7 +89,12 @@ const Quote = () => {
         </div>
         <div className="flex flex-col  gap-[1.25vw]">
           <div className="rounded-[2.3vw] sm:h-[37vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+                  width={10000}
+                  height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn has done an excellent job of solidifying my
               daughter&apos;s understanding of calculus. My daughter
@@ -79,8 +106,10 @@ const Quote = () => {
               environment throughout the summer.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                  width={10000}
+                  height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">
@@ -94,7 +123,12 @@ const Quote = () => {
             </div>
           </div>
           <div className="rounded-[2.3vw] sm:h-[37vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+                  width={10000}
+                  height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn helped me develop a strategic plan to navigate high
               school by clarifying what I should prioritize. Through
@@ -103,8 +137,10 @@ const Quote = () => {
               grades, time management, and confidence in my abilities.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                  width={10000}
+                  height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">
@@ -120,7 +156,12 @@ const Quote = () => {
         </div>
         <div className="flex flex-col  justify-center gap-[1.25vw]">
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+                  width={10000}
+                  height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn has done an excellent job of solidifying my
               daughter&apos;s understanding of calculus. My daughter
@@ -132,8 +173,10 @@ const Quote = () => {
               environment throughout the summer.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                  width={10000}
+                  height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">
@@ -147,7 +190,12 @@ const Quote = () => {
             </div>
           </div>
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
-            <img src="/icons/quote.svg" className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]" />
+            <Image
+                  width={10000}
+                  height={10000}
+              src="/icons/quote.svg"
+              className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
+            />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
               Euclid Learn helped me develop a strategic plan to navigate high
               school by clarifying what I should prioritize. Through
@@ -156,8 +204,10 @@ const Quote = () => {
               grades, time management, and confidence in my abilities.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
-              <img
-                src="https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg"
+              <Image
+                  width={10000}
+                  height={10000}
+                src="/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw]  justify-center">

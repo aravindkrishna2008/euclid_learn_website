@@ -1,7 +1,11 @@
+import Image from "next/image";
+
 const Results = () => {
   return (
     <div className="w-full bg-[#25272c] sm:h-[85vh] py-[20vw] sm:py-0 relative overflow-hidden flex items-center justify-center ">
-      <img
+      <Image
+        width={10000}
+        height={10000}
         src="/gridGray.png"
         alt="hero"
         className="absolute inset-0 w-full h-full object-cover rounded-3xl z-0 opacity-20"
