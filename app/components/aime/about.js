@@ -28,12 +28,12 @@ const About = () => {
           varies. <br />
           <br />
           The AIME test consists of 15 questions to be completed in 3 hours, and
-          each answer is an integer between 000 and 999. A student's AIME score
-          is calculated by the number of questions they answer correctly. There
-          is no negative marking in AIME results. <br />
+          each answer is an integer between 000 and 999. A student&apos;s AIME
+          score is calculated by the number of questions they answer correctly.
+          There is no negative marking in AIME results. <br />
           <br />
           Top students who receive an AIME qualifying score are invited to take
-          the USA's national math olympiad, which is the next stage in the
+          the USA&apos;s national math olympiad, which is the next stage in the
           series of math competitions.
         </p>
       </div>
