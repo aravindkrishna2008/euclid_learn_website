@@ -18,6 +18,8 @@ body {
   transition: transform 500ms ease-out;
 }
 
+
+
 .slide-exit {
   transform: translateX(0);
 }

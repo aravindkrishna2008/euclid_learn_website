@@ -10,7 +10,7 @@ const Hero = () => {
         alt="usaco hero"
         className="h-[85vh] w-[100%] object-cover"
       />
-      <div className="absolute top-[50%] -translate-y-[50%]  left-[10vw] sm:left-[15vw] ">
+      <div className="absolute top-[50%] -translate-y-[50%]  left-[10vw] sm:left-[6.25vw] ">
         <h1 className="text-[15vw] sm:text-[6.875vw] text-white font-semibold leading-[105%] w-[80vw] sm:w-[40vw] sm:tracking-[-3.52px]">
           Excel in AIME
         </h1>

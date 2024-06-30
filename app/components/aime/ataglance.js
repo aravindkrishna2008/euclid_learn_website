@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AtAGlance = () => {
   return (
-    <div className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
+    <div className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
       <h1 className="sm:text-[5vw] text-[10vw] text-[#0F0F0F] w-[80vw] sm:w-[40vw] text-center leading-[105%] font-semibold tracking-[-1.92px]">
         At a Glance
       </h1>

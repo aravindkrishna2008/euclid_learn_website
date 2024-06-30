@@ -12,7 +12,6 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
   const pages = [
     { name: "AP", path: "/ap" },
     { name: "SAT", path: "/sat" },
-    { name: "ACT", path: "/act" },
     { name: "AIME", path: "/aime" },
     { name: "USACO", path: "/usaco" },
     { name: "PRICING", path: "/pricing", onClick: pricerefclick },
@@ -92,7 +91,7 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
       </p>
       {isOpen && (
         <div
-          className={`absolute top-[15vw] left-0 w-full bg-white z-10 flex flex-col items-center md:hidden ${
+          className={`absolute top-[15vw] z-50 left-0 w-full bg-white  flex flex-col items-center md:hidden ${
             isOpen ? "animate-slide-down" : "animate-slide-up "
           } ${isAnimating ? "animating" : ""}`}
           onAnimationEnd={handleAnimationEnd}
