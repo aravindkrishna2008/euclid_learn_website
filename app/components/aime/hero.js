@@ -19,10 +19,10 @@ const Hero = () => {
           problem-solving techniques.
         </p>
         <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[1.5vw] gap-[2vw] sm:gap-[0.9375vw]">
-          <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#F3B71D] rounded-full text-[#1B125C]">
+          <div className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#F3B71D] rounded-full text-[#1B125C]">
             Claim 1-Hour Free Tutoring
           </div>
-          <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#fff] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#fff] rounded-full">
+          <div className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:opacity-70 transition-all text-[4vw] leading-[150%] border border-[#fff] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#fff] rounded-full">
             View Pricing
           </div>
         </div>

@@ -75,7 +75,7 @@ const Results = () => {
               Enroll Now and Join Our Success Stories!
             </p>
           </div>
-          <div className="sm:text-[1.09375vw] sm:mt-0 mt-[2vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white">
+          <div className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all sm:mt-0 mt-[2vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white">
             Claim 1-Hour Free Tutoring
           </div>
         </div>

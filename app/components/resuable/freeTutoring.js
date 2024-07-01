@@ -71,7 +71,7 @@ const FreeTutoring = ({ handleClick }) => {
             placeholder="Write any concerns here"
             className="bg-transparent text-white opacity-60 font-light placeholder-white outline-none w-full border-b-[1px] border-white py-[0.8vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw]"
           />
-          <button className="bg-[#F3B71D] mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] fomt-semibold text-[3vw] sm:text-[1vw] font-semibold">
+          <button className="bg-[#F3B71D] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] fomt-semibold text-[3vw] sm:text-[1vw] font-semibold">
             Claim 1-Hour Free Tutoring
           </button>
         </div>

@@ -67,7 +67,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="w-[100%] rounded-full bg-[#332B00] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
+          <div className="w-[100%] rounded-full cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#514501] transition-all bg-[#332B00] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
             Claim 1-Hour Free Tutoring
           </div>
         </div>
@@ -123,7 +123,7 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="w-[100%] rounded-full bg-[#25272C] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
+          <div className="w-[100%] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#3c404a] transition-all rounded-full bg-[#25272C] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
             Claim 1-Hour Free Tutoring
           </div>
         </div>

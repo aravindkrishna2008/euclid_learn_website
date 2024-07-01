@@ -20,10 +20,10 @@ const Hero = () => {
           exams and master the material.
         </p>
         <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[1.5vw] gap-[2vw] sm:gap-[0.9375vw]">
-          <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white">
+          <div className="sm:text-[1.09375vw] hover:bg-[#314ac7] transition-all hover:-translate-y-1 duration-200 hover:scale-105 text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white">
             Claim 1-Hour Free Tutoring
           </div>
-          <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#25272C] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#25272C] rounded-full">
+          <div className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#25272C] font-semibold tracking-[0.02vw] hover:border-[#4b4d59] hover:text-[#border-[#4b4d59]] transition-all hover:-translate-y-1 duration-200 hover:scale-105 cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#25272C] rounded-full">
             View Pricing
           </div>
         </div>

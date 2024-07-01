@@ -4,7 +4,7 @@ const PremiumTutoring = () => {
   return (
     <section className="flex flex-col items-center h-screen bg-blue-600 text-white">
       <div className="text-center  mt-[20vh]">
-        <h1 className="text-4xl sm:text-[4vw] text-[5vw] font-semibold leading-[120%]">
+        <h1 className="text-4xl sm:text-[4vw] text-[10vw] font-semibold leading-[120%]">
           Premium Tutoring
         </h1>
         <div className="flex justify-center mb-6">
@@ -17,20 +17,13 @@ const PremiumTutoring = () => {
             />
           </div>
         </div>
-        <p className="font-light text-[#ffffff] text-[4vw] sm:text-[1vw] leading-[25.6px] tracking-[0.28px]">
-          This is next-level SAT prep. Our premium tutors have all
-        </p>
-        <p className="font-light text-[#ffffff] text-[4vw] sm:text-[1vw] leading-[25.6px] tracking-[0.28px]">
-          scored in the 99th percentile and have been teaching for
-        </p>
-
-        <p className="font-light text-[#ffffff] text-[4vw] sm:text-[1vw] leading-[25.6px] tracking-[0.28px]">
-          more than 8 years. They&apos;ll provide personalized, one-on-
-        </p>
-        <p className="font-light text-[#ffffff] text-[4vw] sm:text-[1vw] leading-[25.6px] tracking-[0.28px]">
-          one support tailored to your specific needs.
-        </p>
       </div>
+      <p className="font-light text-[#ffffff] text-center w-[80vw] text-[4vw] sm:w-[34vw] sm:text-[1.25vw] leading-[160%] tracking-[0.28px]">
+        This is next-level SAT prep. Our premium tutors have all scored in the
+        99th percentile and have been teaching for more than 8 years.
+        They&apos;ll provide personalized, one-on-one support tailored to your
+        specific needs.
+      </p>
     </section>
   );
 };
