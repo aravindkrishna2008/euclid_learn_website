@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { CSSTransition } from "react-transition-group";
+import { motion, AnimatePresence } from "framer-motion";
 import CarouselItem from "./carouselItem";
 import Image from "next/image";
 
@@ -42,14 +42,21 @@ const HeroCarousel = () => {
         className="absolute inset-0 w-full h-full object-cover rounded-3xl z-0 opacity-20"
       />
       <div className="w-full h-full flex items-center justify-center">
-        <CSSTransition in={true} timeout={500} classNames="slide" unmountOnExit>
-          <CarouselItem
+        <AnimatePresence>
+          <motion.div
             key={currentSlide}
-            image={items[currentSlide].image}
-            description={items[currentSlide].description}
-            name={items[currentSlide].name}
-          />
-        </CSSTransition>
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 1 }}
+          >
+            <CarouselItem
+              image={items[currentSlide].image}
+              description={items[currentSlide].description}
+              name={items[currentSlide].name}
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
       <div className="absolute bottom-4 flex space-x-2">
         {items.map((_, index) => (

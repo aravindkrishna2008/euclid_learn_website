@@ -1,25 +1,52 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const WhyEuclid = () => {
   return (
     <div className="bg-[#F7F2DF] px-[6.25vw] py-[10vw] flex items-center flex-col">
-      <p className="text-[#3958F2] text-[3vw] sm:text-[1.2vw] font-semibold">
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-[#3958F2] text-[3vw] sm:text-[1.2vw] font-semibold"
+      >
         Why Choose EUCLID?
-      </p>
-      <h1 className="text-[10vw] sm:text-[5vw] w-[80vw] sm:w-[50vw] text-center font-semibold  leading-[105%] mt-[3.75vw]">
+      </motion.p>
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-[10vw] sm:text-[5vw] w-[80vw] sm:w-[50vw] text-center font-semibold leading-[105%] mt-[3.75vw]"
+      >
         Gain a Competitive Advantage
-      </h1>
-      <p className="sm:w-[27vw] w-[80vw] text-[4vw] font-light text-center mt-[2vw] sm:mt-[1vw] sm:text-[1.25vw]">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="sm:w-[27vw] w-[80vw] text-[4vw] font-light text-center mt-[2vw] sm:mt-[1vw] sm:text-[1.25vw]"
+      >
         Receive exclusive one-on-one mentoring from our award-winning coaches.
-      </p>
-      <Image
-        width={10000}
-        height={10000}
-        src="/icons/smiley/smiley_yellow_blue.png"
-        className="sm:w-[41vw] w-[80vw] mt-[7vw]"
-      />
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          width={10000}
+          height={10000}
+          src="/icons/smiley/smiley_yellow_blue.png"
+          className="sm:w-[41vw] w-[80vw] mt-[7vw]"
+        />
+      </motion.div>
       <div className="flex flex-col sm:flex-row mt-[12vw] gap-[1.25vw]">
-        <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-yellow-50 p-8 rounded-[2.5vw]"
+        >
           <Image
             width={10000}
             height={10000}
@@ -31,14 +58,18 @@ const WhyEuclid = () => {
               One on One Learning
             </h1>
             <p className="sm:text-[1.25vw] text-[4vw] mt-[1vw] text-[#383A42] tracking-[0.16px] leading-[160%] font-light">
-              {" "}
               Students connect with our mentors individually via Google Meet for
               private lessons, ensuring focused attention and personalized
               guidance.
             </p>
           </div>
-        </div>
-        <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-yellow-50 p-8 rounded-[2.5vw]"
+        >
           <Image
             width={10000}
             height={10000}
@@ -50,14 +81,18 @@ const WhyEuclid = () => {
               Understand Concepts Better
             </h1>
             <p className="sm:text-[1.25vw] text-[4vw] mt-[1vw] text-[#383A42] tracking-[0.16px] leading-[160%] font-light">
-              {" "}
               Mentors personalize student solutions based on diagnostics and
               teach in an efficient manner by presenting uniquely insightful
               problems.
             </p>
           </div>
-        </div>
-        <div className="bg-yellow-50 p-8 rounded-[2.5vw]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-yellow-50 p-8 rounded-[2.5vw]"
+        >
           <Image
             width={10000}
             height={10000}
@@ -69,12 +104,11 @@ const WhyEuclid = () => {
               Students Come First
             </h1>
             <p className="sm:text-[1.25vw] text-[4vw] mt-[1vw] text-[#383A42] tracking-[0.16px] leading-[160%] font-light">
-              {" "}
               Lessons are taught with the student in mind and we prioritize and
               optimize performance on the assessments they want to focus on.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

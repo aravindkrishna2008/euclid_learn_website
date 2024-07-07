@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
   return (
     <div className="bg-[#EFF3FF] py-[20vw] px-[6.25vw] sm:py-[10vw] gap-[2vw] grid grid-cols-1 sm:grid-cols-2 items-center justify-between">
-      <div className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw] w-[100%] sm:w-[43vw]">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw] w-[100%] sm:w-[43vw]"
+      >
         <div className="flex flex-row items-center gap-[5vw] sm:gap-[1vw]">
           <Image
             src="/icons/general_icons/i_icon.svg"
@@ -36,9 +42,14 @@ const About = () => {
           the USA&apos;s national math olympiad, which is the next stage in the
           series of math competitions.
         </p>
-      </div>
+      </motion.div>
       <div className="grid grid-rows-2 gap-[2vw] w-[100%] sm:w-[43vw] h-full">
-        <div className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw]  w-[100%] sm:w-[43vw]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw] w-[100%] sm:w-[43vw]"
+        >
           <div className="flex flex-row items-center gap-[5vw] sm:gap-[1vw]">
             <Image
               src="/icons/general_icons/book.svg"
@@ -58,8 +69,13 @@ const About = () => {
             is quite an accomplishment, and very few are able to solve many
             questions on it. Deep understanding of the topics in necessary.
           </p>
-        </div>
-        <div className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw] w-[100%] sm:w-[43vw]">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col bg-white py-[3.75vw] px-[2.5vw] rounded-[1.875vw] w-[100%] sm:w-[43vw]"
+        >
           <div className="flex flex-row items-center gap-[5vw] sm:gap-[1vw]">
             <Image
               src="/icons/general_icons/schedule.svg"
@@ -75,7 +91,7 @@ const About = () => {
             The AIME is generally sometime in early-to-mid March, and occurs
             about one month after the AMC 10/12.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

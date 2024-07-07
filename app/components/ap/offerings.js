@@ -1,5 +1,6 @@
 import Image from "next/image";
 import OfferingModal from "./offeringModal";
+import { motion } from "framer-motion";
 
 const Offerings = () => {
   return (
@@ -8,118 +9,125 @@ const Offerings = () => {
         width={10000}
         height={10000}
         src="/icons/smiley/blue_yellow_smile.svg"
-        className="absolute -top-[5vw]  left-[10vw] z-10 sm:w-[10vw] w-[10vw]"
+        className="absolute -top-[5vw] left-[10vw] z-10 sm:w-[10vw] w-[10vw]"
       />
-      <h1 className="sm:text-[5vw] text-[10vw] w-[80vw] sm:w-[40vw] text-center leading-[105%] font-semibold tracking-[-1.92px]">
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="sm:text-[5vw] text-[10vw] w-[80vw] sm:w-[40vw] text-center leading-[105%] font-semibold tracking-[-1.92px]"
+      >
         Our AP Course Offerings{" "}
-      </h1>
-      <p className="sm:w-[30vw] w-[80vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw] text-center font-light ">
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        className="sm:w-[30vw] w-[80vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw] text-center font-light"
+      >
         Our AP Tutoring is available for these exams. Click the icon next to the
         exam name to learn more about it.
-      </p>
+      </motion.p>
       <div className="flex w-[100%] justify-around flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
-        <div className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow">
-          <Image
-            width={10000}
-            height={10000}
-            src="/icons/general_icons/math-book.svg"
-            className="sm:w-[4.375vw] border-black  w-[10vw]"
-          />
-          <p className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
-            Mathematics
-          </p>
-          <p className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]  ">
-            <OfferingModal
-              offering="AP Calculus AB/BC"
-              keyConcepts="Differentiation, integration, limits, and application of derivatives and integrals."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB BC Calculus, including multiple-choice and free-response question practice."
+        {[
+          {
+            category: "Mathematics",
+            iconSrc: "/icons/general_icons/math-book.svg",
+            offerings: [
+              {
+                offering: "AP Calculus AB/BC",
+                keyConcepts: "Differentiation, integration, limits, and application of derivatives and integrals.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB BC Calculus, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP Precalculus",
+                keyConcepts: "Trigonometric functions, sequences, and polynomial equations.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from Precalculus, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP Statistics",
+                keyConcepts: "Data collection, interpretation, and statistical inference.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from AP Statistics, including multiple-choice and free-response question practice."
+              }
+            ]
+          },
+          {
+            category: "Computer Science",
+            iconSrc: "/icons/general_icons/code-brackets.svg",
+            offerings: [
+              {
+                offering: "AP Computer Science A",
+                keyConcepts: "Object-oriented programming, data structures, and algorithms.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Computer Science A exam, including multiple-choice and free-response question practice."
+              }
+            ]
+          },
+          {
+            category: "Sciences",
+            iconSrc: "/icons/general_icons/test-tube.svg",
+            offerings: [
+              {
+                offering: "AP Biology",
+                keyConcepts: "Cell structure, cellular processes, genetics, and evolution.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP Chemistry",
+                keyConcepts: "Atomic structure, chemical reactions, and stoichiometry.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Chemistry exam, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP Physics I, II, and C: Mech",
+                keyConcepts: "Newtonian mechanics, electricity, and magnetism.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Physics exams, including multiple-choice and free-response question practice."
+              }
+            ]
+          },
+          {
+            category: "Humanities",
+            iconSrc: "/icons/general_icons/open-book.svg",
+            offerings: [
+              {
+                offering: "AP US History",
+                keyConcepts: "American history from pre-Columbian to the present.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP US History exam, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP Psychology",
+                keyConcepts: "The scientific study of behavior and mental processes.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Psychology exam, including multiple-choice and free-response question practice."
+              },
+              {
+                offering: "AP World History",
+                keyConcepts: "Global processes and contacts in different types of human societies.",
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP World History exam, including multiple-choice and free-response question practice."
+              }
+            ]
+          }
+        ].map(({ category, iconSrc, offerings }, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 2, y: 0 }}
+            transition={{ duration: 1 }}
+            className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow"
+          >
+            <Image
+              width={10000}
+              height={10000}
+              src={iconSrc}
+              className="sm:w-[4.375vw] border-black w-[10vw]"
             />
-            <OfferingModal
-              offering="AP Precalculus"
-              keyConcepts="Differentiation, integration, limits, and application of derivatives and integrals."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB BC Calculus, including multiple-choice and free-response question practice."
-            />
-            <OfferingModal
-              offering="AP Statistics"
-              keyConcepts="Differentiation, integration, limits, and application of derivatives and integrals."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB BC Calculus, including multiple-choice and free-response question practice."
-            />
-          </p>
-        </div>
-        <div className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow">
-          <Image
-            width={10000}
-            height={10000}
-            src="/icons/general_icons/code-brackets.svg"
-            className="sm:w-[4.375vw] w-[10vw]"
-          />
-          <p className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
-            Computer Science
-          </p>
-          <p className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]  ">
-            <OfferingModal
-              offering="AP Computer Science A"
-              keyConcepts="Object-oriented programming, data structures, and algorithms."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Computer Science A exam, including multiple-choice and free-response question practice."
-            />
-          </p>
-        </div>
-        <div className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow">
-          <Image
-            width={10000}
-            height={10000}
-            src="/icons/general_icons/test-tube.svg"
-            className="sm:w-[4.375vw] w-[10vw]"
-          />
-          <p className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
-            Sciences
-          </p>
-          <p className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]  ">
-            <OfferingModal
-              offering="AP Biology"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-            <OfferingModal
-              offering="AP Chemistry"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-            <OfferingModal
-              offering="AP Physics I, II, and C: Mech"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-          </p>
-        </div>
-        <div className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow">
-          <Image
-            width={10000}
-            height={10000}
-            src="/icons/general_icons/open-book.svg"
-            className="sm:w-[4.375vw] w-[10vw]"
-          />
-          <p className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
-            Humanities
-          </p>
-          <p className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]  ">
-            <OfferingModal
-              offering="AP US History"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-            <OfferingModal
-              offering="AP Psychology"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-            <OfferingModal
-              offering="AP World History"
-              keyConcepts="Cell structure, cellular processes, genetics, and evolution."
-              testingPractices="Weekly quizzes, timed exams, and comprehensive review sessions covering topics from the AP Biology exam, including multiple-choice and free-response question practice."
-            />
-          </p>
-        </div>
+            <p className="sm:text-[1.4vw] text-[5vw] text-white mt-[3.125vw] font-semibold">
+              {category}
+            </p>
+            <div className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]">
+              {offerings.map((offering, i) => (
+                <OfferingModal key={i} {...offering} />
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

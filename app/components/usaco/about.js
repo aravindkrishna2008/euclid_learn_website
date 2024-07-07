@@ -1,16 +1,28 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-[#DCE3FD] py-[20vw] sm:py-[10vw]  gap-[4vw] flex flex-col sm:flex-row items-center justify-center">
-      <Image
-        width={10000}
-        height={10000}
-        src="/icons/general_icons/block.gif"
-        unoptimized
-        className="sm:w-[25vw] w-[50vw]"
-      />
-      <div className="flex flex-col">
+    <div className="bg-[#DCE3FD] py-[20vw] sm:py-[10vw] gap-[4vw] flex flex-col sm:flex-row items-center justify-center">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          width={10000}
+          height={10000}
+          src="/icons/general_icons/block.gif"
+          unoptimized
+          className="sm:w-[25vw] w-[50vw]"
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.4 }}
+        className="flex flex-col"
+      >
         <h1 className="sm:text-[5vw] text-[10vw] text-[#0F0F0F] font-semibold tracking-[-1.92px]">
           About USACO
         </h1>
@@ -21,7 +33,7 @@ const About = () => {
           problem-solving mindset, shaping analytical thinkers to excel beyond
           the competition.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

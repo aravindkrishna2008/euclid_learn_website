@@ -1,12 +1,18 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
     <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center">
       <div className="p-[2vw] relative">
-        <h1 className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]">
+        <motion.h1
+          initial={{ opacity: 0, y: 50, size: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, size: 1 }}
+          transition={{ duration: 0.5 }}
+          className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
+        >
           Student Oriented Academic Coaching
-        </h1>
+        </motion.h1>
         <Image
           width={10000}
           height={10000}
@@ -36,23 +42,30 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[0vw] right-[18vw]"
         />
       </div>
-      <p className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center">
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center"
+      >
         Providing Guidance One Student at a Time. Unlock Your Potential and
         Excel in Your Studies with Personalized and Private Guidance.
-      </p>
+      </motion.p>
       <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[3vw] gap-[2vw] sm:gap-[0.9375vw]">
-        <div
-          className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white"
+        <motion.div
+          whileHover={{ scale: 1.05, translateY: -5 }}
           onClick={freeTutoringRefClick}
+          className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white"
         >
           Claim 1-Hour Free Tutoring
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.05, translateY: -5 }}
           onClick={pricerefclick}
-          className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:-translate-y-1 duration-200 hover:scale-105 hover:border-[#314ac7] hover:text-[#314ac7] border-[#3958F2] font-semibold tracking-[0.02vw] cursor-pointer  px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#3958F2] rounded-full"
+          className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:-translate-y-1 duration-200 hover:scale-105 hover:border-[#314ac7] hover:text-[#314ac7] border-[#3958F2] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#3958F2] rounded-full"
         >
           View Pricing
-        </div>
+        </motion.div>
       </div>
     </div>
   );
