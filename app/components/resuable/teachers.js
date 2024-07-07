@@ -1,18 +1,34 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Teachers = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center py-[10vw] px-[17vw]">
-      <h1 className="text-[#25272C] font-semibold text-[10vw] sm:text-[5vw] leading-snug">
+      <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-[#25272C] font-semibold text-[10vw] sm:text-[5vw] leading-snug"
+      >
         Our Teachers
-      </h1>
-      <p className="text-[#25272C] font-light text-[4vw] sm:text-[1.25vw] mt-[1vw] text-center w-[80vw] sm:w-[50%]">
+      </motion.h1>
+      <motion.p
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-[#25272C] font-light text-[4vw] sm:text-[1.25vw] mt-[1vw] text-center w-[80vw] sm:w-[50%]"
+      >
         Our team is composed of diligent top-performing students with
         prestigious awards, high standardized test scores, and extensive
         teaching experience.
-      </p>
+      </motion.p>
       <div className="flex flex-col sm:flex-row gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
-        <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
+        >
           <Image width={10000} height={10000} src="/team/Anirudh.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
@@ -25,8 +41,13 @@ const Teachers = () => {
               1580 SAT Score
             </p>
           </div>
-        </div>
-        <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
+        >
           <Image width={10000} height={10000} src="/team/Woojin.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
@@ -39,8 +60,13 @@ const Teachers = () => {
               USAMO
             </p>
           </div>
-        </div>
-        <div className="flex flex-col gap-[1.875vw] justify-center items-center  text-center">
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
+        >
           <Image width={10000} height={10000} src="/team/Abhinav.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
@@ -53,7 +79,7 @@ const Teachers = () => {
               USACO Platinum
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,58 +1,79 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const HowItWorks = () => {
   return (
     <div className="bg-[#FFFFFF] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
-      <h1 className="text-[#25272C] text-center text-[10vw] sm:text-[5vw] leading-[105%] tracking-[-1.92px] w-[80vw] sm:w-[55vw] mt-[1.25vw] font-semibold">
-      Why Choose EUCLID for Your SAT Prep?      </h1>
-      <div className="flex w-[100%] justify-between flex-col  sm:flex-row gap-[1.25vw] mt-[5vw]">
-        <div className="bg-[#FDF9E9] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]">
-        <Image
+      <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-[#25272C] text-center text-[10vw] sm:text-[5vw] leading-[105%] tracking-[-1.92px] w-[80vw] sm:w-[55vw] mt-[1.25vw] font-semibold"
+      >
+        Why Choose EUCLID for Your SAT Prep?
+      </motion.h1>
+      <div className="flex w-[100%] justify-between flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="bg-[#FDF9E9] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]"
+        >
+          <Image
             src="/icons/medals/medal1st.svg"
             className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw] mb-8 mt-8"
             width={100}
             height={100}
           />
           <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-          Best Tutors in SAT Prep
+            Best Tutors in SAT Prep
           </h1>
-          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]  ">
-          All EUCLID tutors are chosen based on their previous records, extensive knowledge and empathy.
+          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
+            All EUCLID tutors are chosen based on their previous records, extensive knowledge and empathy.
           </p>
-        </div>
-        <div className="bg-[#F3F4FF] rounded-[1.25vw] items-center p-[5vw] sm:p-[3vw]">
-        <Image
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="bg-[#F3F4FF] rounded-[1.25vw] items-center p-[5vw] sm:p-[3vw]"
+        >
+          <Image
             src="/icons/general_icons/user1.svg"
             className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw] mb-8 mt-8"
             width={100}
             height={100}
           />
           <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-          Individualized Guidance
+            Individualized Guidance
           </h1>
-          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]  ">
-          Work 1-on-1 with an SAT expert to build a personal study plan.
+          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
+            Work 1-on-1 with an SAT expert to build a personal study plan.
           </p>
-        </div>
-        <div className="bg-[#FDF9E9] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]">
-        <Image
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="bg-[#FDF9E9] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]"
+        >
+          <Image
             src="/icons/general_icons/Group 82.svg"
             className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw] mb-8 mt-8"
             width={100}
             height={100}
           />
           <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-          Study on Web Or Mobile
+            Study on Web Or Mobile
           </h1>
-          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]  ">
-          On the go? Our classes, practice tests, and resources are available 
-          on both mobile and on web.
+          <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
+            On the go? Our classes, practice tests, and resources are available 
+            on both mobile and on web.
           </p>
-        </div>
+        </motion.div>
       </div>
-      
     </div>
-    
   );
 };
+
 export default HowItWorks;

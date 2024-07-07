@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Quote = () => {
   return (
     <div className="bg-[#F7F9FC] px-[6.25vw] py-[10vw] flex flex-col items-center justify-center">
-      <div className="flex flex-col text-center justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col text-center justify-center items-center"
+      >
         <Image
           width={10000}
           height={10000}
@@ -18,9 +24,14 @@ const Quote = () => {
           Don&apos;t take our word for it only. Hear what our students have to
           say about their experience with us.
         </p>
-      </div>
+      </motion.div>
       <div className="flex flex-col sm:flex-row mt-[5vw] gap-[1.25vw] justify-between">
-        <div className="flex flex-col  justify-center gap-[1.25vw]">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col justify-center gap-[1.25vw]"
+        >
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
               width={10000}
@@ -45,7 +56,7 @@ const Quote = () => {
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   John Doe
                 </h1>
@@ -71,12 +82,12 @@ const Quote = () => {
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
-                  width={10000}
-                  height={10000}
+                width={10000}
+                height={10000}
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   David
                 </h1>
@@ -86,12 +97,17 @@ const Quote = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col  gap-[1.25vw]">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.25vw]"
+        >
           <div className="rounded-[2.3vw] sm:h-[37vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
-                  width={10000}
-                  height={10000}
+              width={10000}
+              height={10000}
               src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
@@ -107,12 +123,12 @@ const Quote = () => {
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
-                  width={10000}
-                  height={10000}
+                width={10000}
+                height={10000}
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   John Doe
                 </h1>
@@ -124,8 +140,8 @@ const Quote = () => {
           </div>
           <div className="rounded-[2.3vw] sm:h-[37vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
-                  width={10000}
-                  height={10000}
+              width={10000}
+              height={10000}
               src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
@@ -138,12 +154,12 @@ const Quote = () => {
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
-                  width={10000}
-                  height={10000}
+                width={10000}
+                height={10000}
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   David
                 </h1>
@@ -153,12 +169,17 @@ const Quote = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col  justify-center gap-[1.25vw]">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col justify-center gap-[1.25vw]"
+        >
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
-                  width={10000}
-                  height={10000}
+              width={10000}
+              height={10000}
               src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
@@ -174,12 +195,12 @@ const Quote = () => {
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
-                  width={10000}
-                  height={10000}
+                width={10000}
+                height={10000}
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   John Doe
                 </h1>
@@ -191,8 +212,8 @@ const Quote = () => {
           </div>
           <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
-                  width={10000}
-                  height={10000}
+              width={10000}
+              height={10000}
               src="/icons/general_icons/quote.svg"
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
@@ -205,12 +226,12 @@ const Quote = () => {
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
-                  width={10000}
-                  height={10000}
+                width={10000}
+                height={10000}
                 src="/team/Abhinav.png"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
-              <div className="flex flex-col ml-[1.25vw]  justify-center">
+              <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
                   David
                 </h1>
@@ -220,7 +241,7 @@ const Quote = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

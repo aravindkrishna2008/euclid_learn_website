@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Faq = () => {
@@ -41,7 +42,12 @@ const Faq = () => {
   };
 
   return (
-    <div className="mx-auto mt-[5vw] mb-[5vw]  bg-white rounded-[2vw] w-[90vw] sm:w-[65vw] p-[5vw] sm:p-[2.5vw]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="mx-auto mt-[5vw] mb-[5vw] bg-white rounded-[2vw] w-[90vw] sm:w-[65vw] p-[5vw] sm:p-[2.5vw]"
+    >
       <h2 className="sm:text-[2.8vw] text-[7.5vw] font-bold text-[#25272C] mb-[3.125vw]">
         Frequently Asked Questions
       </h2>
@@ -83,7 +89,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
