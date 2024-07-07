@@ -6,41 +6,65 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
     <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center">
       <div className="p-[2vw] relative">
         <motion.h1
-          initial={{ opacity: 0, y: 50, size: 0.5 }}
-          whileInView={{ opacity: 1, y: 0, size: 1 }}
+          initial={{ opacity: 0, y: 50, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
         >
           Student Oriented Academic Coaching
         </motion.h1>
-        <Image
-          width={10000}
-          height={10000}
-          src="/icons/smiley/smile_blue.svg"
-          alt="hero"
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[-0.5vw] left-[9vw] -z-10"
-        />
-        <Image
-          width={10000}
-          height={10000}
-          src="/icons/smiley/smile_yellow.svg"
-          alt="hero"
+        >
+          <Image
+            width={10000}
+            height={10000}
+            src="/icons/smiley/smile_blue.svg"
+            alt="hero"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] left-[-1vw]"
-        />
-        <Image
-          width={10000}
-          height={10000}
-          src="/icons/smiley/smile_orange.svg"
-          alt="hero"
+        >
+          <Image
+            width={10000}
+            height={10000}
+            src="/icons/smiley/smile_yellow.svg"
+            alt="hero"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
           className="w-[5vw] h-[5vw] sm:block hidden absolute bottom-[2.5vw] right-[-1vw] -z-10"
-        />
-        <Image
-          width={10000}
-          height={10000}
-          src="/icons/smiley/smile_yellow.svg"
-          alt="hero"
+        >
+          <Image
+            width={10000}
+            height={10000}
+            src="/icons/smiley/smile_orange.svg"
+            alt="hero"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
           className="w-[5vw] h-[5vw] sm:block hidden absolute top-[0vw] right-[18vw]"
-        />
+        >
+          <Image
+            width={10000}
+            height={10000}
+            src="/icons/smiley/smile_yellow.svg"
+            alt="hero"
+          />
+        </motion.div>
       </div>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
