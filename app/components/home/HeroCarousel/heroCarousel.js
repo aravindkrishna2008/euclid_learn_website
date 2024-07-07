@@ -33,7 +33,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <div className="w-full bg-[#3958F2] sm:h-[70vh] py-[5vh] sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw]">
+    <div className="w-full bg-[#3958F2] sm:h-[70vh] py-[10vh] sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw]">
       <Image
         width={10000}
         height={10000}

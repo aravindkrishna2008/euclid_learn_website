@@ -7,7 +7,7 @@ const Results = () => {
       <Image
         width={10000}
         height={10000}
-        src="/grid/gridGray.png"
+        src="/grid/noline.png"
         alt="hero"
         className="absolute inset-0 w-full h-full object-cover rounded-3xl z-0 opacity-20"
       />

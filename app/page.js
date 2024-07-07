@@ -45,14 +45,17 @@ export default function Home() {
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />
-      <div className="sm:px-[6.25vw]">
+      <div className="sm:px-[6.25vw] ">
         <Hero
           freeTutoringRefClick={freeTutoringRefClick}
           pricerefclick={pricerefclick}
         />
+        
         <HeroCarousel
           freeTutoringRefClick={freeTutoringRefClick}
           pricerefclick={pricerefclick}
+          className="mt-[6.25vw]" // Add this line
+
         />
       </div>
       <WhyEuclid
