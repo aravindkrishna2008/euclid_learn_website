@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Results = () => {
   return (
-    <div className="w-full bg-[#25272c] sm:h-[95vh] py-[20vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
+    <div className="w-full bg-[#25272c] sm:h-[100vh] py-[30vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
       <Image
         width={10000}
         height={10000}
@@ -17,7 +17,7 @@ const Results = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="sm:text-[5vw] text-[10vw] font-semibold text-white text-center leading-[105%] tracking-[-1.92px] pt-[15vw]"
+            className="sm:text-[5vw] text-[10vw] font-semibold text-white text-center leading-[105%] tracking-[-1.92px] pt-[20vw]"
           >
             View our Results
           </motion.h1>
@@ -59,7 +59,7 @@ const Results = () => {
             </motion.div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row mt-[6vw] gap-[3.125vw] items-center justify-center  pb-[15vw]">
+        <div className="flex flex-col sm:flex-row mt-[6vw] gap-[3.125vw] items-center justify-center  pb-[20vw]">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

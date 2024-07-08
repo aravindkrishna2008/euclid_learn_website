@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Quote = () => {
   return (
-    <div className="bg-[#F7F9FC] px-[6.25vw] py-[10vw] flex flex-col items-center justify-center">
+    <div className="bg-[#F7F9FC] px-[6.25vw] py-[5vw] flex flex-col items-center justify-cente ">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
