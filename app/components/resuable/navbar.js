@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-
 const Navbar = ({ teacherClick, pricerefclick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -50,11 +49,15 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
   };
 
   return (
+  
     <div
       className={`flex flex-row text-[1.09375vw] font-semibold justify-between items-center py-[5vw] sm:py-[1.5vw] bg-white px-[6.25vw] w-[100%] z-20 transition-all duration-300 ease-in-out ${
         isSticky ? "fixed shadow-md top-0 translate-y-0" : "relative"
       } ${isNavGone ? "-translate-y-full" : ""}`}
     >
+      <div>
+
+      </div>
       <div className="py-[0.625vw] hover:scale-105 transition-all duration-200 px-[0.9375vw] text-neutral-400">
         <Link href="/">
           <Image

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useRef } from "react";
-
 import Navbar from "./components/resuable/navbar";
 import Hero from "./components/home/hero";
 import HeroCarousel from "./components/home/HeroCarousel/heroCarousel";
@@ -50,12 +49,10 @@ export default function Home() {
           freeTutoringRefClick={freeTutoringRefClick}
           pricerefclick={pricerefclick}
         />
-        
         <HeroCarousel
           freeTutoringRefClick={freeTutoringRefClick}
           pricerefclick={pricerefclick}
           className="mt-[6.25vw]" // Add this line
-
         />
       </div>
       <WhyEuclid

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
-    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center ">
+    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[22vh] ">
       <div className="p-[2vw] relative">
         <motion.h1
           initial={{ opacity: 0, y: 50, scale: 0.5 }}
