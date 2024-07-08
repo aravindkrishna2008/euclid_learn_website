@@ -1,8 +1,11 @@
 import Image from "next/image";
 
-const CarousolItem = ({ image, name, description }) => {
+const CarouselItem = ({ image, name, description, background }) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-[3vw] z-10">
+    <div
+      className="flex flex-col py-[10vh] sm:flex-row gap-[3vw] z-10 mb-10 p-5 rounded-lg px-[10vh] w-full  sm:rounded-3xl relative overflow-hidden"
+      style={{ background }}
+    >
       <Image
         width={10000}
         height={10000}
@@ -24,4 +27,4 @@ const CarousolItem = ({ image, name, description }) => {
   );
 };
 
-export default CarousolItem;
+export default CarouselItem;
