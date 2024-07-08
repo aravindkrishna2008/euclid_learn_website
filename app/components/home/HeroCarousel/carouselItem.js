@@ -3,7 +3,7 @@ import Image from "next/image";
 const CarouselItem = ({ image, name, description, background }) => {
   return (
     <div
-      className="flex flex-col py-[10vh] sm:flex-row gap-[3vw] z-10 mb-10 p-5 rounded-lg px-[10vh] w-full  sm:rounded-3xl relative overflow-hidden"
+      className="flex flex-col py-[10vh] sm:flex-row gap-[3vw] z-10 p-5 rounded-lg px-[12vw] w-full  sm:rounded-3xl relative overflow-hidden "
       style={{ background }}
     >
       <Image

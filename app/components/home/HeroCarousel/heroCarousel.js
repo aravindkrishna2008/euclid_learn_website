@@ -55,7 +55,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <div className="sm:h-[70vh]  sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw] pb-7 ]">
+    <div className="sm:h-[90vh]  sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw]  pb-7">
       <AnimatePresence>
         {items.map((item, index) => (
           index === currentSlide && (
@@ -77,7 +77,7 @@ const HeroCarousel = () => {
           )
         ))}
       </AnimatePresence>
-      <div className="absolute bottom-4 flex space-x-2 z-10">
+      <div className="absolute bottom-4 flex space-x-2 z-10 mb-[8vh]">
         {items.map((_, index) => (
           <div
             key={index}
