@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Results = () => {
   return (
-    <div className="w-full bg-[#25272c] sm:h-[85vh] py-[20vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
+    <div className="w-full bg-[#25272c] sm:h-[95vh] py-[20vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
       <Image
         width={10000}
         height={10000}
@@ -17,7 +17,7 @@ const Results = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="sm:text-[5vw] text-[10vw] font-semibold text-white text-center leading-[105%] tracking-[-1.92px]"
+            className="sm:text-[5vw] text-[10vw] font-semibold text-white text-center leading-[105%] tracking-[-1.92px] pt-[15vw]"
           >
             View our Results
           </motion.h1>
@@ -59,7 +59,7 @@ const Results = () => {
             </motion.div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row mt-[6vw] gap-[3.125vw] items-center justify-center">
+        <div className="flex flex-col sm:flex-row mt-[6vw] gap-[3.125vw] items-center justify-center  pb-[15vw]">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ const Results = () => {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05, translateY: -5 }}
-            className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all sm:mt-0 mt-[2vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white"
+            className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all sm:mt-0 mt-[2vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white "
           >
             Claim 1-Hour Free Tutoring
           </motion.div>
