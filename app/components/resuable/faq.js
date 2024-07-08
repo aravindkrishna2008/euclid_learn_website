@@ -22,7 +22,7 @@ const Faq = () => {
       question:
         "How do you keep parents/guardians informed about their child's progress?",
       answer:
-        "We keep parents/guardians informed through regular progress reports, parent-teacher meetings, and an online portal where they can track their child';;s performance.",
+        "We keep parents/guardians informed through regular progress reports, parent-teacher meetings, and an online portal where they can track their child's performance.",
     },
     {
       question:
@@ -46,7 +46,7 @@ const Faq = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="mx-auto mt-[5vw] mb-[5vw] bg-white rounded-[2vw] w-[90vw] sm:w-[65vw] p-[5vw] sm:p-[2.5vw]"
+      className="mx-auto mt-[10vw] mb-[10vw] bg-white rounded-[2vw] w-[90vw] sm:w-[65vw] p-[5vw] sm:p-[2.5vw] shadow-lg" // Added shadow-lg here
     >
       <h2 className="sm:text-[2.8vw] text-[7.5vw] font-bold text-[#25272C] mb-[3.125vw]">
         Frequently Asked Questions

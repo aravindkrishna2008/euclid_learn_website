@@ -18,11 +18,11 @@ const Quote = () => {
           alt="quote"
         />
         <h1 className="sm:text-[2.8125vw] text-[8vw] w-[80vw] font-semibold text-[#25272C] tracking-[-0.06vw] leading-[115%]">
-          Our Happy Student
+          Our Happy Students
         </h1>
         <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#25272C] mt-[1.25vw] w-[80vw] sm:w-[32vw] mx-auto">
-          Don&apos;t take our word for it only. Hear what our students have to
-          say about their experience with us.
+          Don&apos;t just take our word for it. Hear what our students have to 
+          say about their experience
         </p>
       </motion.div>
       <div className="flex flex-col sm:flex-row mt-[5vw] gap-[1.25vw] justify-between">
