@@ -55,9 +55,6 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
         isSticky ? "fixed shadow-md top-0 translate-y-0" : "relative"
       } ${isNavGone ? "-translate-y-full" : ""}`}
     >
-      <div>
-
-      </div>
       <div className="py-[0.625vw] hover:scale-105 transition-all duration-200 px-[0.9375vw] text-neutral-400">
         <Link href="/">
           <Image
