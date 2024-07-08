@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Teachers = () => {
+const Teachers = ({ teacherRef }) => {
   return (
     <div className="bg-white flex flex-col items-center justify-center py-[10vw] px-[17vw]">
       <motion.h1
@@ -81,6 +81,7 @@ const Teachers = () => {
           </div>
         </motion.div>
       </div>
+      {/* <div ref={teacherRef}></div> */}
     </div>
   );
 };

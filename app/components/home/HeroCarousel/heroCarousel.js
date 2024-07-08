@@ -55,39 +55,33 @@ const HeroCarousel = () => {
   };
 
   return (
-    <div className="sm:h-[90vh]  sm:rounded-3xl relative overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw]  pb-7">
+    <div className="sm:h-[90vh] relative  sm:rounded-[1.875vw] overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw]  pb-7">
       <AnimatePresence>
-        {items.map((item, index) => (
-          index === currentSlide && (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0.5, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2 }}
-              className="absolute inset-0 flex items-center justify-center w-full h-full"
-            >
-              <CarouselItem
-                image={item.image}
-                description={item.description}
-                name={item.name}
-                background={item.background}
-              />
-            </motion.div>
-          )
-        ))}
+        {items.map(
+          (item, index) =>
+            index === currentSlide && (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0.5, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className="absolute inset-0 flex items-center justify-center w-full h-full"
+              >
+                <CarouselItem
+                  image={item.image}
+                  description={item.description}
+                  name={item.name}
+                  background={item.background}
+                  items={items}
+                  handleDotClick={handleDotClick}
+                  currentSlide={currentSlide}
+                />
+              </motion.div>
+            )
+        )}
       </AnimatePresence>
-      <div className="absolute bottom-4 flex space-x-2 z-10 mb-[8vh]">
-        {items.map((_, index) => (
-          <div
-            key={index}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === currentSlide ? "bg-white" : "bg-gray-400"
-            }`}
-            onClick={() => handleDotClick(index)}
-          />
-        ))}
-      </div>
+
     </div>
   );
 };

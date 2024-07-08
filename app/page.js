@@ -76,6 +76,7 @@ export default function Home() {
       <Teachers
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
+        teacherRef={teacherRef}
       />
       <Faq />
       <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
