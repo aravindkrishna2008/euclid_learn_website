@@ -53,7 +53,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
@@ -84,7 +84,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
@@ -125,7 +125,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
@@ -156,7 +156,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
@@ -197,7 +197,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
@@ -228,7 +228,7 @@ const Quote = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/team/Abhinav.png"
+                src="/team/default.webp"
                 className="sm:w-[4.6vw] sm:h-[4.6vw] h-[10vw] w-[10vw] rounded-full"
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
