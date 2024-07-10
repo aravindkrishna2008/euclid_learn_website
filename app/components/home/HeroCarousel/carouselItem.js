@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"; // Import Link from Next.js
 
 const CarouselItem = ({
   image,
@@ -8,6 +9,7 @@ const CarouselItem = ({
   items,
   handleDotClick,
   currentSlide,
+  link, // New prop for the link destination
 }) => {
   return (
     <div
@@ -27,9 +29,18 @@ const CarouselItem = ({
         <p className="sm:text-[1.25vw] text-[4vw] text-white w-[80vw] sm:w-[30vw] font-light mt-[1.25vw]">
           {description}
         </p>
-        <div className="cursor-pointer hover:opacity-70 transition-all duration-200 text-[4vw] sm:text-[1vw] mt-[5vw] sm:mt-[2vw] rounded-full flex items-center justify-center font-semibold border-white border w-[80vw] sm:w-[10vw] py-[1vw] tracking-[0.05vw] text-white">
-          Learn More
-        </div>
+        {/* Conditionally render a Link component */}
+        {link ? (
+          <Link legacyBehavior href={link}>
+            <a className="cursor-pointer hover:opacity-70 transition-all duration-200 text-[4vw] sm:text-[1vw] mt-[5vw] sm:mt-[2vw] rounded-full flex items-center justify-center font-semibold border-white border w-[80vw] sm:w-[10vw] py-[1vw] tracking-[0.05vw] text-white">
+              Learn More
+            </a>
+          </Link>
+        ) : (
+          <div className="cursor-pointer hover:opacity-70 transition-all duration-200 text-[4vw] sm:text-[1vw] mt-[5vw] sm:mt-[2vw] rounded-full flex items-center justify-center font-semibold border-white border w-[80vw] sm:w-[10vw] py-[1vw] tracking-[0.05vw] text-white">
+            Learn More
+          </div>
+        )}
       </div>
       <div className="absolute -bottom-[2vw] flex space-x-2 z-10 mb-[8vh]">
         {items.map((_, index) => (

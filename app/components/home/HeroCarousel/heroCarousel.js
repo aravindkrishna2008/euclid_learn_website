@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CarouselItem from "./carouselItem";
-import Image from "next/image";
 
 const HeroCarousel = () => {
   const items = [
@@ -12,6 +11,7 @@ const HeroCarousel = () => {
       description:
         "Master the challenging American Invitational Mathematics Examination (AIME) with specialized coaching and problem-solving techniques.",
       background: "#3958F2",
+      link: "/aime", // Example link destination
     },
     {
       image: "/stock_image/sat/ap.jpeg",
@@ -19,6 +19,7 @@ const HeroCarousel = () => {
       description:
         "Score higher on your SAT Exams with Euclid Learn or get your money back.",
       background: "#f58c4c",
+      link: "/sat", // Example link destination
     },
     {
       image: "/stock_image/ap/apt.png",
@@ -26,6 +27,7 @@ const HeroCarousel = () => {
       description:
         "Master the challenging American Invitational Mathematics Examination (AIME) with specialized coaching and problem-solving techniques.",
       background: "#f0ba2f",
+      link: "/ap",
     },
     {
       image: "/stock_image/sat/sat1.jpeg",
@@ -33,10 +35,10 @@ const HeroCarousel = () => {
       description:
         "Achieve higher USACO scores with personalized mentorship from our team of programming experts. Our mentors have extensive experience in competitive programming and have achieved top scores.",
       background: "#1c164a",
+      link: "/usaco",
     },
     // ... other items
   ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideInterval = 9000;
 
@@ -76,12 +78,12 @@ const HeroCarousel = () => {
                   items={items}
                   handleDotClick={handleDotClick}
                   currentSlide={currentSlide}
+                  link={item.link} // Pass the link prop
                 />
               </motion.div>
             )
         )}
       </AnimatePresence>
-
     </div>
   );
 };
