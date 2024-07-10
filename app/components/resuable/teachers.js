@@ -58,7 +58,7 @@ const Teachers = ({ teacherRef }) => {
 
             </p>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-            1560 SAT Score 
+            1570 SAT Score 
             </p>
           </div>
         </motion.div>
