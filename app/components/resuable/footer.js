@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const pages = [
-    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Privacy Policy", path: "/privacy" },
     { name: "Terms and Conditions", path: "/TOS" },
   ];
 
