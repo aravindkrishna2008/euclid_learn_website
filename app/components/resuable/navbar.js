@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-const Navbar = ({ teacherClick, pricerefclick }) => {
+const Navbar = ({ teacherClick, freeclick, freeTutoringRefClick, pricerefclick}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -86,7 +86,7 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
-      <p className="text-[#3958F2] font-semibold hidden md:block transition-all duration-200 cursor-pointer hover:-translate-y-1 hover:text-[#3346a4]">
+      <p  onClick={freeTutoringRefClick} className="text-[#3958F2] font-semibold hidden md:block transition-all duration-200 cursor-pointer hover:-translate-y-1 hover:text-[#3346a4]">
         ENROLL NOW
       </p>
       {isOpen && (
@@ -111,7 +111,7 @@ const Navbar = ({ teacherClick, pricerefclick }) => {
               )}
             </div>
           ))}
-          <p className="text-[#3958F2] cursor-pointer hover:text-[#3a50bb] text-[4vw] font-semibold py-4">
+          <p onClick={freeTutoringRefClick} className="text-[#3958F2] cursor-pointer hover:text-[#3a50bb] text-[4vw] font-semibold py-4">
             ENROLL NOW
           </p>
         </div>
