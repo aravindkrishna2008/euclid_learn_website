@@ -42,7 +42,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:opacity-70 transition-all text-[4vw] leading-[150%] border border-[#fff] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#fff] rounded-full"
+            className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:bg-[#F3B71D] hover:text-[#1B125C] hover:border-[#F3B71D] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#ffffff] rounded-full "
           >
             View Pricing
           </motion.div>

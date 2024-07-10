@@ -39,7 +39,7 @@ const Hero = () => {
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05, translateY: -5 }}
-            className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border border-[#25272C] font-semibold tracking-[0.02vw] hover:border-[#4b4d59] hover:text-[#4b4d59] transition-all hover:-translate-y-1 duration-200 hover:scale-105 cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#25272C] rounded-full"
+            className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:bg-[#314ac7] hover:text-[#ffffff] border-[#ffffff] hover:border-[#314ac7] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#ffffff] rounded-full "
           >
             View Pricing
           </motion.div>
