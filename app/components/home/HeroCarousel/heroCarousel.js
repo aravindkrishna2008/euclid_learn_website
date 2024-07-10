@@ -33,7 +33,7 @@ const HeroCarousel = () => {
       image: "/stock_image/sat/sat1.jpeg",
       name: "USA Computing Olympiad",
       description:
-        "Achieve higher USACO scores with personalized mentorship from our team of programming experts. Our mentors have extensive experience in competitive programming and have achieved top scores.",
+        "Achieve higher USACO scores with personalized mentorship from our award-winning team of expert mentors, who have extensive experience in competitive programming and have achieved top scores.",
       background: "#1c164a",
       link: "/usaco",
     },
