@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Results = () => {
   return (
-    <div className="w-full bg-[#25272c] sm:h-[100vh] py-[30vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
+    <div className="w-full bg-[#25272c] sm:h-[100vh] py-[9.3vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
       <Image
         width={10000}
         height={10000}
