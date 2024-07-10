@@ -72,12 +72,15 @@ const Teachers = ({ teacherRef }) => {
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Abhinav Raja
             </p>
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              Distinguished Honor Roll Top 1%
+            <p className="text-[#196aff] font-light text-[3vw] sm:text-[1vw] underline">
+              <a href="https://usaco.org/current/data/open24_gold_results.html#:~:text=Abhinav%20Raja" target="_blank" rel="noopener noreferrer">
+                USACO Platinum
+              </a>
             </p>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              USACO Platinum
+              1580 SAT Score
             </p>
+            
           </div>
         </motion.div>
       </div>
