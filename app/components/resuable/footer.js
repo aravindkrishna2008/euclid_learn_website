@@ -17,7 +17,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-[1vw]">
           <p>Discord</p>
+          <Link legacyBehavior href="https://www.youtube.com/@euclidlearn">
           <p>Youtube</p>
+          </Link>
           <p>Instagram</p>
           <p>Twitter/X</p>
         </div>
