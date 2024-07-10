@@ -25,7 +25,7 @@ const HeroCarousel = () => {
       image: "/stock_image/ap/apt.png",
       name: "AP Tutoring",
       description:
-        "Master the challenging American Invitational Mathematics Examination (AIME) with specialized coaching and problem-solving techniques.",
+        "Study smarter with step-by-step guidance, regular assessments, hands-on practice, and timed exams. Get fully prepared for your AP exams and master the material.",
       background: "#f0ba2f",
       link: "/ap",
     },
