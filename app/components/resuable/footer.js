@@ -1,8 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
+  const pages = [
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "Terms and Conditions", path: "/TOS" },
+  ];
+
   return (
-    <footer className="bg-[#25272C] px-[10vw] h-[45vw]  py-[5vw] relative">
+    <footer className="bg-[#25272C] px-[10vw] h-[45vw] py-[5vw] relative">
       <div className="flex w-[40vw] text-[1.25vw] text-[#B6BAC3] cursor-pointer font-light flex-row justify-between">
         <div className="flex flex-col gap-[1vw]">
           <p>Home</p>
@@ -16,8 +22,13 @@ const Footer = () => {
           <p>Twitter/X</p>
         </div>
         <div className="flex flex-col gap-[1vw]">
-          <p>Privacy Policy</p>
-          <p>Terms and Conditions</p>
+          {pages.map((page, index) => (
+            <div key={index} className="hover:underline">
+              <Link legacyBehavior href={page.path}>
+                <a>{page.name}</a>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
       <Image
