@@ -33,10 +33,10 @@ const Results = () => {
         </div>
         <div className="flex flex-col sm:flex-row mt-[4vw] gap-[1.25vw] justify-between">
           {[
-            { value: '1420', label: 'SAT Average', color: '#3958F2' },
-            { value: '3+', label: 'Promotions', color: '#F3B71D' },
-            { value: '18%', label: 'Test Improvement', color: '#F7711F' },
-            { value: '3+', label: 'AIME Qualifiers', color: '#F46036' },
+            { value: '1490', label: 'SAT Average', color: '#3958F2' },
+            { value: '10+', label: 'USACO Promotions', color: '#F3B71D' },
+            { value: '20%', label: 'Test Improvement', color: '#F7711F' },
+            { value: '5+', label: 'AIME Qualifiers', color: '#F46036' },
           ].map((item, index) => (
             <motion.div
               key={index}
