@@ -96,7 +96,7 @@ const Quote = () => {
           transition={{ duration: 1 }}
           className="flex flex-col gap-[1.25vw]"
         >
-          <div className="rounded-[2.3vw] sm:h-[50vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
+          <div className="rounded-[2.3vw] sm:h-[45vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
               width={10000}
               height={10000}
