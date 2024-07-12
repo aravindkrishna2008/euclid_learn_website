@@ -104,8 +104,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Abhinav's expertise in teaching competitive programming is unmatched. Thanks to his support, I progressed from bronze to gold, a testament to his effective guidance and dedication. What sets Abhinav apart is his commitment to his students—he consistently went above and beyond to assist with practice problems, ensuring I grasped every concept thoroughly, even outside of our sessions. Another noteworthy aspect is his approachable demeanor. Abhinav creates a comfortable learning environment where I never hesitated to ask questions or seek clarification. I highly recommend his services without reservation. 
-
+            Abhinav's expertise in teaching competitive programming is unmatched. What sets Abhinav apart is his commitment to his students and attention to detail —he consistently went above and beyond to assist with practice problems, making sure I thorougly understood every concept, even outside of our sessions. Abhinav is also very approachable and creates a comfortable learning environment where I never hesitated to ask questions or seek clarification. I highly recommend his services without reservation. 
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
