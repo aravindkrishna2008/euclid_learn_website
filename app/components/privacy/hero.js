@@ -11,7 +11,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
           transition={{ duration: 0.5 }}
           className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
         >
-Privacy Policy
+          Privacy Policy
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -72,8 +72,11 @@ Privacy Policy
         transition={{ duration: 1 }}
         className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center"
       >
-Protecting your privacy is fundamental to Euclid Learn LLC ("Euclid Learn"). This Privacy Policy applies to our website, euclidlearn.com, and governs data collection and usage. By using our website, you consent to the data practices described in this policy.      </motion.p>
-      
+        Protecting your privacy is fundamental to Euclid Learn LLC (&quot;Euclid
+        Learn&quot;). This Privacy Policy applies to our website,
+        euclidlearn.com, and governs data collection and usage. By using our
+        website, you consent to the data practices described in this policy.{" "}
+      </motion.p>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Results = () => {
+const Results = ({freeTutoringRefClick}) => {
   return (
     <div className="w-full bg-[#25272c] sm:h-[112vh] py-[20vw] sm:py-0 relative overflow-hidden flex items-center justify-center">
       <Image
@@ -33,10 +33,10 @@ const Results = () => {
         </div>
         <div className="flex flex-col sm:flex-row mt-[4vw] gap-[1.25vw] justify-between">
           {[
-            { value: '1490', label: 'SAT Average', color: '#3958F2' },
-            { value: '10+', label: 'USACO Promotions', color: '#F3B71D' },
-            { value: '20%', label: 'Test Improvement', color: '#F7711F' },
-            { value: '5+', label: 'AIME Qualifiers', color: '#F46036' },
+            { value: "1490", label: "SAT Average", color: "#3958F2" },
+            { value: "10+", label: "USACO Promotions", color: "#F3B71D" },
+            { value: "20%", label: "Test Improvement", color: "#F7711F" },
+            { value: "5+", label: "AIME Qualifiers", color: "#F46036" },
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -66,13 +66,16 @@ const Results = () => {
             transition={{ duration: 1 }}
             className="flex text-[4vw] text-center sm:text-left sm:text-[1vw] flex-col"
           >
-            <p className="font-light text-white">Ready to Achieve Your Goals?</p>
+            <p className="font-light text-white">
+              Ready to Achieve Your Goals?
+            </p>
             <p className="font-light text-white">
               Enroll Now and Join Our Success Stories!
             </p>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.05, translateY: -5 }}
+            onClick={freeTutoringRefClick}
             className="sm:text-[1.09375vw] hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#314ac7] transition-all sm:mt-0 mt-[2vw] text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white "
           >
             Claim 1-Hour Free Tutoring

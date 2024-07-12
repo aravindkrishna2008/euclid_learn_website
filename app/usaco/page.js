@@ -14,6 +14,8 @@ import About from "../components/usaco/about";
 import Road2Plat from "../components/usaco/road2plat";
 import TwoPrinciples from "../components/usaco/twoPrinciples";
 import HowItWorks from "../components/usaco/howitworks";
+import PopUp from "../components/resuable/popup";
+
 
 export default function USACO() {
   const freeTutoringRef = useRef(null);
@@ -40,30 +42,26 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
+      <Hero
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+      />
       <About />
       <Road2Plat />
       <TwoPrinciples />
       <HowItWorks />
-      <Results
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
-      <Quote
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Results freeTutoringRefClick={freeTutoringRefClick} />
+      <Quote freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={priceRef}></div>
-      <Pricing
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={teacherRef}></div>
-      <Teachers
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Teachers freeTutoringRefClick={freeTutoringRefClick} />
       <Faq />
       <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
       <FreeTutoring />

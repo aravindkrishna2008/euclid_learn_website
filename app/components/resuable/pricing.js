@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Pricing = () => {
+const Pricing = ({freeTutoringRefClick}) => {
   return (
     <div className="bg-[#3958F2] px-[6.25vw] py-[9.3vw] flex flex-col items-center justify-center">
       <div className="text-center">
@@ -81,7 +81,10 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="w-[100%] rounded-full cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#514501] transition-all bg-[#332B00] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
+          <div
+            onClick={freeTutoringRefClick}
+            className="w-[100%] rounded-full cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#514501] transition-all bg-[#332B00] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center"
+          >
             Claim 1-Hour Free Tutoring
           </div>
         </motion.div>
@@ -140,7 +143,10 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="w-[100%] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#3c404a] transition-all rounded-full bg-[#25272C] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center">
+          <div
+            onClick={freeTutoringRefClick}
+            className="w-[100%] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#3c404a] transition-all rounded-full bg-[#25272C] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center"
+          >
             Claim 1-Hour Free Tutoring
           </div>
         </motion.div>

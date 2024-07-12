@@ -11,6 +11,8 @@ import Footer from "../components/resuable/footer";
 
 import Hero from "../components/privacy/hero";
 import Grid from "../components/privacy/list";
+import PopUp from "../components/resuable/popup";
+
 
 
 
@@ -39,14 +41,14 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
-      <Grid/>
-      
+      <Hero freeTutoringRefClick={freeTutoringRefClick} />
+      <Grid />
       <FreeTutoring />
       <Footer />
     </div>

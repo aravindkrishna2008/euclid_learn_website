@@ -12,6 +12,8 @@ import Footer from "../components/resuable/footer";
 import Hero from "../components/aime/hero";
 import About from "../components/aime/about";
 import AtAGlance from "../components/aime/ataglance";
+import PopUp from "../components/resuable/popup";
+
 
 export default function USACO() {
   const freeTutoringRef = useRef(null);
@@ -38,12 +40,13 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
+      <Hero freeTutoringRefClick={freeTutoringRefClick} />
       <About />
       <AtAGlance />
       <Results freeTutoringRefClick={freeTutoringRefClick} />

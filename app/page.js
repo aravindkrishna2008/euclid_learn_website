@@ -12,6 +12,8 @@ import Teachers from "./components/resuable/teachers";
 import Faq from "./components/resuable/faq";
 import FreeTutoring from "./components/resuable/freeTutoring";
 import Footer from "./components/resuable/footer";
+import PopUp from "./components/resuable/popup";
+
 
 export default function Home() {
   const freeTutoringRef = useRef(null);
@@ -39,6 +41,8 @@ export default function Home() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
+
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}

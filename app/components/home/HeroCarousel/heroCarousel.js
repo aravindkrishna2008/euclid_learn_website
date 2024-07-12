@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CarouselItem from "./carouselItem";
 
-const HeroCarousel = () => {
+const HeroCarousel = ({ freeTutoringRefClick }) => {
   const items = [
     {
       image: "/stock_image/home/hero_carousol_img_1.jpeg",
@@ -79,6 +79,7 @@ const HeroCarousel = () => {
                   handleDotClick={handleDotClick}
                   currentSlide={currentSlide}
                   link={item.link} // Pass the link prop
+                  freeTutoringRefClick={freeTutoringRefClick}
                 />
               </motion.div>
             )

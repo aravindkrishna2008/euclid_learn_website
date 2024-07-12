@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero = ({freeTutoringRefClick, pricerefclick}) => {
   return (
     <div className="relative">
       <Image
@@ -31,6 +31,7 @@ const Hero = () => {
         </motion.p>
         <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[1.5vw] gap-[2vw] sm:gap-[0.9375vw]">
           <motion.div
+            onClick={freeTutoringRefClick}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
@@ -42,6 +43,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
+            onClick={pricerefclick}
             className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:bg-[#F3B71D] hover:text-[#1B125C] hover:border-[#F3B71D] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#ffffff] rounded-full "
           >
             View Pricing

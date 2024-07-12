@@ -13,6 +13,8 @@ import Hero from "../components/ap/hero";
 import About from "../components/aime/about";
 import AtAGlance from "../components/aime/ataglance";
 import Reasons from "../components/ap/reasons";
+import PopUp from "../components/resuable/popup";
+
 import Offerings from "../components/ap/offerings";
 
 export default function USACO() {
@@ -40,12 +42,13 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
+      <Hero freeTutoringRefClick={freeTutoringRefClick} />
       <Reasons />
       <Offerings />
       <Results freeTutoringRefClick={freeTutoringRefClick} />

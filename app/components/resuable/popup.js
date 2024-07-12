@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const PopUp = () => {
+const PopUp = ({freeTutoringRefClick}) => {
   const [shown, setShown] = useState(true);
 
   return (
@@ -14,7 +14,10 @@ const PopUp = () => {
       <p className="text-[1vw]">
         Claim your 1-Hour Free Tutoring with our award-winning teachers
       </p>
-      <p className="text-[1vw] text-[#3958F2] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:opacity-70 bg-white rounded-full px-[0.8vw] py-[0.4vw] leading-[130%] font-semibold">
+      <p
+        onClick={freeTutoringRefClick}
+        className="text-[1vw] text-[#3958F2] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:opacity-70 bg-white rounded-full px-[0.8vw] py-[0.4vw] leading-[130%] font-semibold"
+      >
         Claim 1-Hour Free Tutoring{" "}
       </p>
       <Image

@@ -19,6 +19,8 @@ import HowItWorks from "../components/sat/howitworks";
 import PremiumTutoring from "../components/sat/premium";
 import Approach from "../components/sat/approach";
 import ParentQuestionsSection from "../components/sat/Questions";
+import PopUp from "../components/resuable/popup";
+
 
 
 export default function USACO() {
@@ -46,14 +48,14 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
-      <Grid/>
-      
+      <Hero freeTutoringRefClick={freeTutoringRefClick} />
+      <Grid />
       <FreeTutoring />
       <Footer />
     </div>

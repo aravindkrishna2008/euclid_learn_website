@@ -18,6 +18,8 @@ import Grid from "../components/sat/grid";
 import PremiumTutoring from "../components/sat/premium";
 import Approach from "../components/sat/approach";
 import ParentQuestionsSection from "../components/sat/Questions";
+import PopUp from "../components/resuable/popup";
+
 
 
 export default function USACO() {
@@ -45,32 +47,23 @@ export default function USACO() {
 
   return (
     <div className="">
+      <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />{" "}
-      <Hero />
+      <Hero freeTutoringRefClick={freeTutoringRefClick} />
       <HowItWorks />
-      <Grid/>
-      <PremiumTutoring/>
-      <Approach/>
-      <ParentQuestionsSection/>
-      
- 
-      
-      
-      <Quote
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Grid />
+      <PremiumTutoring />
+      <Approach />
+      <ParentQuestionsSection />
+      <Quote freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={priceRef}></div>
-      <Pricing
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={teacherRef}></div>
-      <Teachers
-        freeTutoringRefClick={freeTutoringRefClick}
-      />
+      <Teachers freeTutoringRefClick={freeTutoringRefClick} />
       <Faq />
       <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
       <FreeTutoring />

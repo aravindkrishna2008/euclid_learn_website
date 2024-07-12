@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const FreeTutoring = ({ handleClick }) => {
+const FreeTutoring = ({ handleClick, freeTutoringRefClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,7 +11,10 @@ const FreeTutoring = ({ handleClick }) => {
     >
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between">
         <div className="w-[80vw] flex flex-col gap-[2vw] sm:gap-0">
-          <h1 className="sm:text-[5vw] text-[10vw] text-white leading-[105%] font-semibold">
+          <h1
+            onClick={freeTutoringRefClick}
+            className="sm:text-[5vw] text-[10vw] text-white leading-[105%] font-semibold"
+          >
             Claim 1-Hour Free Tutoring
           </h1>
           <p className="mt-[3.125vw] w-[65%] text-[4vw] sm:text-[1.4vw] text-white font-semibold leading-[130%]">
@@ -82,7 +85,10 @@ const FreeTutoring = ({ handleClick }) => {
             placeholder="Write any concerns here"
             className="bg-transparent text-white opacity-60 font-light placeholder-white outline-none w-full border-b-[1px] border-white py-[0.8vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw]"
           />
-          <button className="bg-[#F3B71D] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] fomt-semibold text-[3vw] sm:text-[1vw] font-semibold">
+          <button
+            onClick={freeTutoringRefClick}
+            className="bg-[#F3B71D] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] fomt-semibold text-[3vw] sm:text-[1vw] font-semibold"
+          >
             Claim 1-Hour Free Tutoring
           </button>
         </motion.div>

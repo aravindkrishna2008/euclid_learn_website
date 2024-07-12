@@ -23,22 +23,22 @@ const HowItWorks = () => {
       <div className="flex w-[100%] justify-between flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
         {[
           {
-            step: 'Step 1',
-            title: 'Assessment',
+            step: "Step 1",
+            title: "Assessment",
             description:
               "Upon enrollment, our mentors conduct a thorough assessment of the student's existing programming proficiency.",
           },
           {
-            step: 'Step 2',
-            title: 'Tailored Syllabus',
+            step: "Step 2",
+            title: "Tailored Syllabus",
             description:
               "We develop a personalized syllabus based on the student's specific needs and aspirations.",
           },
           {
-            step: 'Step 3',
-            title: 'Mentorship',
+            step: "Step 3",
+            title: "Mentorship",
             description:
-              'Students are paired with a dedicated mentor who will lead them through each level until they achieve Platinum.',
+              "Students are paired with a dedicated mentor who will lead them through each level until they achieve Platinum.",
           },
         ].map((item, index) => (
           <motion.div

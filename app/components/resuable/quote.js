@@ -70,7 +70,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Working with Abhinav was an amazing experience. Thanks to him and the team, I've developed a solid strategy for navigating high school. Under Abhinav's guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was suprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
+            Working with Abhinav was an amazing experience. Thanks to him and the team, I&apos;ve developed a solid strategy for navigating high school. Under Abhinav&apos;s guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was suprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
@@ -138,7 +138,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can't believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Language. Please use him if your in a similar spot I seriously can't recommend this guy enough.
+            Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can&apos;t believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Language. Please use him if your in a similar spot I seriously can&apos;t recommend this guy enough.
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image

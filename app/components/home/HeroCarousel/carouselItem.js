@@ -10,6 +10,7 @@ const CarouselItem = ({
   handleDotClick,
   currentSlide,
   link, // New prop for the link destination
+  freeTutoringRefClick,
 }) => {
   return (
     <div
