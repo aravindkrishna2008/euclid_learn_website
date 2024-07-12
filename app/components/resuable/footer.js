@@ -22,8 +22,11 @@ const Footer = () => {
           <Link legacyBehavior href="https://www.youtube.com/@euclidlearn">
           <p className="hover:underline">Youtube</p>
           </Link>
+          
           <p className="hover:underline">Instagram</p>
+
           <p className="hover:underline">Twitter/X</p>
+
           <Link legacyBehavior href="https://www.linkedin.com/company/euclid-learn/about/?viewAsMember=true">
           <p className="hover:underline">Linkedin</p>
           </Link>
