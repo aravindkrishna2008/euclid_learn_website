@@ -96,7 +96,7 @@ const Quote = () => {
           transition={{ duration: 1 }}
           className="flex flex-col gap-[1.25vw]"
         >
-          <div className="rounded-[2.3vw] sm:h-[37vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
+          <div className="rounded-[2.3vw] sm:h-[50vw] bg-white p-[5vw] sm:p-[2.5vw] flex flex-col justify-between">
             <Image
               width={10000}
               height={10000}
@@ -104,14 +104,8 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-              Euclid Learn has done an excellent job of solidifying my
-              daughter&apos;s understanding of calculus. My daughter
-              significantly improved her testing average and grades in a short
-              period of time. In essence, these classes identify the real
-              questions that appear on assessments and provide solutions in a
-              way that is simple for the student to comprehend. We are grateful
-              to Abhinav for giving our daughter such a positive learning
-              environment throughout the summer.
+            Abhinav's expertise in teaching competitive programming is unmatched. Thanks to his support, I progressed from bronze to gold, a testament to his effective guidance and dedication. What sets Abhinav apart is his commitment to his students—he consistently went above and beyond to assist with practice problems, ensuring I grasped every concept thoroughly, even outside of our sessions. Another noteworthy aspect is his approachable demeanor. Abhinav creates a comfortable learning environment where I never hesitated to ask questions or seek clarification. I highly recommend his services without reservation. 
+
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
@@ -122,10 +116,10 @@ const Quote = () => {
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
-                  John Doe
-                </h1>
+                Anish                </h1>
                 <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#8E95A2]">
-                  Parent
+                Student 
+
                 </p>
               </div>
             </div>
