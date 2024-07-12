@@ -70,7 +70,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Working with Abhinav was an amazing experience. Thanks to him and the team, I&apos;ve developed a solid strategy for navigating high school. Under Abhinav&apos;s guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was suprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
+            Working with Abhinav was an amazing experience. Thanks to him and the team, I&apos;ve developed a solid strategy for navigating high school. Under Abhinav&apos;s guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was surprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
