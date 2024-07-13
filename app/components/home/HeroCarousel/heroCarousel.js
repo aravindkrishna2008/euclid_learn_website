@@ -9,13 +9,13 @@ const HeroCarousel = ({ freeTutoringRefClick }) => {
       image: "/stock_image/home/hero_carousol_img_1.jpeg",
       name: "Excel in AIME",
       description:
-        "Master the challenging American Invitational Mathematics Examination (AIME) with specialized coaching and problem-solving techniques.",
+        "Master the challenging AMC Exam with our award-winning mentors who bring extensive competitive mathematics experience. Benefit from specialized guidance and proven strategies designed to elevate your performance. Don’t miss out—start your journey today.",
       background: "#3958F2",
       link: "/aime", // Example link destination
     },
     {
       image: "/stock_image/sat/ap.jpeg",
-      name: "SAT Private Tutoring",
+      name: "SAT Success Plan",
       description:
         "Score higher on your SAT Exams with Euclid Learn or get your money back.",
       background: "#f58c4c",
@@ -23,7 +23,7 @@ const HeroCarousel = ({ freeTutoringRefClick }) => {
     },
     {
       image: "/stock_image/ap/apt.png",
-      name: "AP Tutoring",
+      name: "AP Masterclass ",
       description:
         "Study smarter with step-by-step guidance, regular assessments, hands-on practice, and timed exams. Get fully prepared for your AP exams and master the material.",
       background: "#f0ba2f",
