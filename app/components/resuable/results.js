@@ -35,7 +35,7 @@ const Results = ({freeTutoringRefClick}) => {
           {[
             { value: "1490", label: "SAT Average", color: "#3958F2" },
             { value: "10+", label: "USACO Promotions", color: "#F3B71D" },
-            { value: "20%", label: "Test Improvement", color: "#F7711F" },
+            { value: "25%", label: "Test Improvement", color: "#F7711F" },
             { value: "5+", label: "AIME Qualifiers", color: "#F46036" },
           ].map((item, index) => (
             <motion.div
