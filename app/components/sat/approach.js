@@ -68,8 +68,8 @@ const Approach = () => {
             A Custom Plan
           </h1>
           <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
-            Each tutor creates a study plan to fit each individual student&aops;s
-            needs and schedule.
+            Each tutor creates a study plan to fit each individual
+            student&apos;s needs and schedule.
           </p>
         </motion.div>
       </div>

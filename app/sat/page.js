@@ -20,26 +20,21 @@ import Approach from "../components/sat/approach";
 import ParentQuestionsSection from "../components/sat/Questions";
 import PopUp from "../components/resuable/popup";
 
-
-
 export default function USACO() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
   const freeTutoringRefClick = () => {
-    console.log("clicked");
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const pricerefclick = () => {
-    console.log("clicked");
     priceRef.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
 
   const teacherClick = () => {
-    console.log("clicked");
     teacherRef.current?.scrollIntoView({
       behavior: "smooth",
     });
@@ -65,7 +60,7 @@ export default function USACO() {
       <div ref={teacherRef}></div>
       <Teachers freeTutoringRefClick={freeTutoringRefClick} />
       <Faq />
-      <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
+      <div ref={freeTutoringRef}></div>
       <FreeTutoring />
       <Footer />
     </div>

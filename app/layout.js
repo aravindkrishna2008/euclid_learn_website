@@ -12,9 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className={`${GeistSans.variable} ${GeistMono.variable}`} lang="en">
-      <body>
-        {children}
-      </body>
+      <link rel="icon" href="/icons/smiley/smile_blue.svg" sizes="any" />
+      <body>{children}</body>
     </html>
   );
 }

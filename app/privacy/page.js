@@ -13,27 +13,21 @@ import Hero from "../components/privacy/hero";
 import Grid from "../components/privacy/list";
 import PopUp from "../components/resuable/popup";
 
-
-
-
 export default function USACO() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
   const freeTutoringRefClick = () => {
-    console.log("clicked");
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const pricerefclick = () => {
-    console.log("clicked");
     priceRef.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
 
   const teacherClick = () => {
-    console.log("clicked");
     teacherRef.current?.scrollIntoView({
       behavior: "smooth",
     });

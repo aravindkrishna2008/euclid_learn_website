@@ -14,26 +14,22 @@ import FreeTutoring from "./components/resuable/freeTutoring";
 import Footer from "./components/resuable/footer";
 import PopUp from "./components/resuable/popup";
 
-
 export default function Home() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
 
   const freeTutoringRefClick = () => {
-    console.log("clicked");
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const pricerefclick = () => {
-    console.log("clicked");
     priceRef.current?.scrollIntoView({
       behavior: "smooth",
     });
   };
 
   const teacherClick = () => {
-    console.log("clicked");
     teacherRef.current?.scrollIntoView({
       behavior: "smooth",
     });
@@ -42,48 +38,29 @@ export default function Home() {
   return (
     <div className="">
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
-
       <Navbar
         freeTutoringRefClick={freeTutoringRefClick}
         pricerefclick={pricerefclick}
         teacherClick={teacherClick}
       />
       <div className="sm:px-[6.25vw] ">
-        <Hero
-          freeTutoringRefClick={freeTutoringRefClick}
-          pricerefclick={pricerefclick}
-        />
+        <Hero />
         <HeroCarousel
-          freeTutoringRefClick={freeTutoringRefClick}
-          pricerefclick={pricerefclick}
           className="mt-[6.25vw]" // Add this line
         />
       </div>
-      <WhyEuclid
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-      />
-      <Results
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-      />
-      <Quote
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-      />
+      <WhyEuclid />
+      <Results freeTutoringRefClick={freeTutoringRefClick} />
+      <Quote freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={priceRef}></div>
-      <Pricing
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-      />
+      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
       <div ref={teacherRef}></div>
       <Teachers
         freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
         teacherRef={teacherRef}
       />
       <Faq />
-      <div ref={freeTutoringRef} pricerefclick={pricerefclick}></div>
+      <div ref={freeTutoringRef}></div>
       <FreeTutoring />
       <Footer />
     </div>
