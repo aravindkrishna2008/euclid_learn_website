@@ -70,7 +70,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Working with Abhinav was an amazing experience. Thanks to him and the team, I&apos;ve developed a solid strategy for navigating high school. Under Abhinav&apos;s guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was surprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
+            Working with Abhinav was a game changer and an amazing experience. Under Abhinav's guidance, I achieved a significant milestone by publishing my research paper in a respected journal (IEEE). I was surprised by how his advice not only boosted my grades but also sharpened my time management skills and increased my confidence in my own abilities. Abhinav and the team played a crucial role in developing a comprehensive strategy for navigating high school successfully.  <Link href="https://assets-eu.researchsquare.com/files/rs-4294555/v2_covered_4399fd54-d645-4560-9f30-7b572780c2c3.pdf?c=1717434129" className="text-[#2a55ff] hover:underline">Link to my research paper</Link>
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
@@ -84,7 +84,7 @@ const Quote = () => {
               Shanker 
                 </h1>
                 <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#8E95A2]">
-                San Jose, Ca
+                Student
                 </p>
               </div>
             </div>
@@ -131,8 +131,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-            Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can&apos;t believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Language. Please use him if your in a similar spot I seriously can&apos;t recommend this guy enough.
-            </p>
+            Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can't believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Biology. If you find yourself in a similar situation, give him a try - I seriously can't recommend this guy enough.            </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
                 width={10000}
@@ -145,7 +144,7 @@ const Quote = () => {
                 Stacy
                 </h1>
                 <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#8E95A2]">
-                Wisconsin                </p>
+                Student                </p>
               </div>
             </div>
           </div>
@@ -164,14 +163,7 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-              Euclid Learn has done an excellent job of solidifying my
-              daughter&apos;s understanding of calculus. My daughter
-              significantly improved her testing average and grades in a short
-              period of time. In essence, these classes identify the real
-              questions that appear on assessments and provide solutions in a
-              way that is simple for the student to comprehend. We are grateful
-              to Abhinav for giving our daughter such a positive learning
-              environment throughout the summer.
+            Abhinav's sessions were a masterclass of how to teach the SAT. I am still shocked that I scored a 1550 on the SAT with only a couple months of practice. Abhinav recognized that I'm a lazy person so he personalized the instruction in a way where I could play to my strengths. One of his mottos is work smarter not harder which is something I have come to realize played a important role in my success. Nobody likes the hassle of preparing for the SAT, rather than take it several times get yourself a seasoned expert like Abhinav so you can knock it out of the ballpark in one go!
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
@@ -182,10 +174,9 @@ const Quote = () => {
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
-                  John Doe
-                </h1>
+                Charlie                </h1>
                 <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#8E95A2]">
-                  Parent
+                Student
                 </p>
               </div>
             </div>
@@ -198,11 +189,8 @@ const Quote = () => {
               className="sm:w-[2.2vw] sm:h-[2.2vw] w-[5vw] h-[5vw]"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-              Euclid Learn helped me develop a strategic plan to navigate high
-              school by clarifying what I should prioritize. Through
-              Abhinav&apos;s guidance, I was able to publish my research paper
-              in a respectable journal. Furthermore, his suggestions improved my
-              grades, time management, and confidence in my abilities.
+            I worked with Abhinav 1 month prior to the AMC. Knowing barely anything and feeling rusty, I felt extremely stressed and anxious about the lack of proper training on the days leading up to the contest but I put my trust in Abhinav. Though I didn't qualify for the AIME, I improved my score by 20% and its an all time high. I plan on continuing to work with the Euclid Learn team and hopefully this coming contest I can qualify!
+
             </p>
             <div className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
@@ -213,11 +201,10 @@ const Quote = () => {
               />
               <div className="flex flex-col ml-[1.25vw] justify-center">
                 <h1 className="sm:text-[1.4vw] text-[5vw] font-semibold text-[#5B616E] tracking-[-0.014vw] leading-[130%]">
-                  David
+                Ethan
                 </h1>
                 <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#8E95A2]">
-                  Tribeca, NY
-                </p>
+Student                </p>
               </div>
             </div>
           </div>
