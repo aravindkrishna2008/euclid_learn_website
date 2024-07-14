@@ -7,7 +7,7 @@ const HeroCarousel = ({ freeTutoringRefClick }) => {
   const items = [
     {
       image: "/stock_image/home/hero_carousol_img_1.jpeg",
-      name: "Excel in AIME",
+      name: "Excel in the AIME",
       description:
         "Master the challenging AMC Exam with our award-winning mentors who bring extensive competitive mathematics experience. Benefit from specialized guidance and proven strategies designed to elevate your performance. Don’t miss out—start your journey today.",
       background: "#3958F2",
