@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Euclid Learn",
-  description: "TODO: SEO OPTMIZED DESCRIPTION",
+  description: "Score higher on the SAT, AP Exams, AMC, USACO, Codeforces, and Tech Interviews with our expert guidance, coaching, and tutoring. ",
 };
 
 export default function RootLayout({ children }) {
