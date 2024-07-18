@@ -29,7 +29,7 @@ const FreeTutoring = ({ handleClick, freeTutoringRefClick }) => {
               src="/icons/general_icons/mail.svg"
             />
             <p className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw] ">
-              contact@euclidlearn.com
+            euclidlearn@gmail.com
             </p>
           </div>
           <div className="flex flex-row mt-[0.3vw] items-center">
