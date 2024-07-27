@@ -29,17 +29,20 @@ const Teachers = ({ teacherRef }) => {
           transition={{ duration: 1 }}
           className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
         >
-          <Image width={10000} height={10000} src="/team/Anirudh.png" />
+          <Image width={10000} height={10000} 
+          
+          className="rounded-[1.6vw] h-[23vw] w-[750vw]"
+
+          src="/team/default.webp" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
-              Anirudh Shyam
+            Shivang Tiwari            
             </p>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              4 Yrs of Mentoring Experience
+            ICPC 2023 World Finalist             
             </p>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              1580 SAT Score
-            </p>
+            EE at IIT Bombay            </p>
           </div>
         </motion.div>
         <motion.div
