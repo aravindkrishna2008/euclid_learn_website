@@ -1,38 +1,122 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
-const Footer = () => {
+
+
+const Footer = ({ teacherClick, freeclick, freeTutoringRefClick, pricerefclick}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [isNavGone, setIsNavGone] = useState(false);
+
   const pages = [
     { name: "Privacy Policy", path: "/privacy" },
     { name: "Terms and Conditions", path: "/TOS" },
   ];
+  const pages2 = [
+    { name: "Home", path: "/" },
+    { name: "Teachers", path: "/teachers", onClick: teacherClick },
+  ];
+
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
+      setIsSticky(scrollPosition > viewportHeight * 0.8); // 80vh
+      setIsNavGone(scrollPosition > viewportHeight * 0.15); // 80vh
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    setIsAnimating(true);
+  };
+
+  const handleAnimationEnd = () => {
+    setIsAnimating(false);
+  };
+
+  const handleLinkClick = (onClick) => {
+    if (onClick) {
+      onClick();
+      setIsOpen(false); // Close the menu if it was open
+    }
+  };
 
   return (
     <footer className="bg-[#25272C] px-[10vw] h-[45vw] py-[5vw] relative">
       <div className="flex w-[40vw] text-[1.25vw] text-[#B6BAC3] cursor-pointer font-light flex-row justify-between">
         <div className="flex flex-col gap-[1vw]">
-          <p>Home</p>
-          <p>About</p>
-          <p>Services</p>
+        {pages2.map((page, index) => (
+            <div
+              key={index}
+              className="py-[0.625vw] px-[0.9375vw] hover:text-neutral-600 transition-all hover:-translate-y-1 duration-200 text-neutral-400 text-[1.09375vw]"
+              onClick={() => handleLinkClick(page.onClick)}
+            >
+              {page.onClick ? (
+                <span>{page.name}</span>
+              ) : (
+                <Link href={page.path}>{page.name}</Link>
+              )}
+            </div>
+          ))}
+           <p  onClick={freeTutoringRefClick} className="py-[0.625vw] px-[0.9375vw] hover:text-neutral-600 transition-all hover:-translate-y-1 duration-200 text-neutral-400 text-[1.09375vw]">
+           Services
+      </p>
+      {isOpen && (
+        <div
+          className={`absolute top-[15vw] z-50 left-0 w-full bg-white  flex flex-col items-center md:hidden ${
+            isOpen ? "animate-slide-down" : "animate-slide-up "
+          } ${isAnimating ? "animating" : ""}`}
+          onAnimationEnd={handleAnimationEnd}
+        >
+          {pages.map((page, index) => (
+            <div
+              key={index}
+              className="py-4 text-neutral-400 text-[4vw]"
+              onClick={() => handleLinkClick(page.onClick)}
+            >
+              {page.onClick ? (
+                <span>{page.name}</span>
+              ) : (
+                <Link href={page.path} onClick={toggleMenu}>
+                  {page.name}
+                </Link>
+              )}
+            </div>
+          ))}
+          <p onClick={freeTutoringRefClick} className="py-[0.625vw] px-[0.9375vw] hover:text-neutral-600 transition-all hover:-translate-y-1 duration-200 text-neutral-400 text-[1.09375vw]">
+            Services
+          </p>
+        </div>
+      )}
         </div>
         <div className="flex flex-col gap-[1vw]">
-        <Link legacyBehavior href="https://discord.gg/aHQsDyEk">
-          <p className="hover:underline">Discord</p>
+          <Link legacyBehavior href="https://discord.gg/aHQsDyEk">
+            <p className="hover:underline">Discord</p>
           </Link>
           <Link legacyBehavior href="https://www.youtube.com/@euclidlearn">
-          <p className="hover:underline">Youtube</p>
+            <p className="hover:underline">Youtube</p>
           </Link>
-          
-          <Link legacyBehavior href="https://www.instagram.com/euclidlearn/">
-          <p className="hover:underline">Instagram</p>
-          </Link>
-
+          {/* <Link legacyBehavior href="https://www.instagram.com/euclidlearn/">
+            <p className="hover:underline">Instagram</p>
+          </Link> */}
           <Link legacyBehavior href="https://x.com/euclid_learn">
-          <p className="hover:underline">Twitter/X</p>
-    </Link> 
-          <Link legacyBehavior href="https://www.linkedin.com/company/euclid-learn/about/?viewAsMember=true">
-          <p className="hover:underline">Linkedin</p>
+            <p className="hover:underline">Twitter/X</p>
           </Link>
+          {/* <Link legacyBehavior href="https://www.linkedin.com/company/euclid-learn/about/?viewAsMember=true">
+            <p className="hover:underline">Linkedin</p>
+          </Link> */}
         </div>
         <div className="flex flex-col gap-[1vw]">
           {pages.map((page, index) => (
@@ -43,6 +127,9 @@ const Footer = () => {
             </div>
           ))}
         </div>
+        <button className="md:hidden text-neutral-400" onClick={toggleMenu}>
+          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
       </div>
       <Image
         width={10000}
@@ -61,9 +148,11 @@ const Footer = () => {
           className="w-[7.5vw] mt-[2vw]"
         />
         <p className="mt-[2vw] text-white text-[0.8vw]">
-          Webpage created by Aravindkrishna Arivudainambi
+          © 2024 Euclid Learn. All rights reserved.
         </p>
+        
       </div>
+      
     </footer>
   );
 };

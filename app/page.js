@@ -62,7 +62,10 @@ export default function Home() {
       <Faq />
       <div ref={freeTutoringRef}></div>
       <FreeTutoring />
-      <Footer />
+      <Footer
+        freeTutoringRefClick={freeTutoringRefClick}
+        teacherClick={teacherClick}
+      />
     </div>
   );
 }
