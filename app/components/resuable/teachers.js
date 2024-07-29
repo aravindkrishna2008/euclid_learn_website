@@ -23,7 +23,7 @@ const Teachers = ({ teacherRef }) => {
         teaching experience.
       </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
-        <motion.div
+        {/*<motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -46,7 +46,7 @@ const Teachers = ({ teacherRef }) => {
               1580 SAT Score
             </p>
           </div>
-        </motion.div>
+  </motion.div>*/}
         
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
@@ -55,8 +55,8 @@ const Teachers = ({ teacherRef }) => {
           className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
         >
           <Image
-            width={300}
-            height={300}
+            width={10000}
+            height={10000}
             src="/team/orange3.png"
             className="object-cover rounded-[2vw] h-[24vw] w-[750vw]"
           />
@@ -83,6 +83,28 @@ const Teachers = ({ teacherRef }) => {
           <Image
             width={1000}
             height={1000}
+            src="/team/someguy.webp"
+            className="object-cover rounded-[2vw] h-[24vw] w-[750vw]"
+          />
+          <div>
+            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+            Ritam Chakraborty
+            </p>
+          
+            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
+            CDSS @ UC Berkeley
+            </p>
+          </div>
+        </motion.div>
+        {/*<motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
+        >
+          <Image
+            width={1000}
+            height={1000}
             src="/team/bharad.webp"
             className=" rounded-[2vw] h-[24vw] w-[700vw] "
           />
@@ -94,7 +116,7 @@ const Teachers = ({ teacherRef }) => {
               Stanford Computer Science Graduate
             </p>
           </div>
-        </motion.div>
+</motion.div>*/}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
