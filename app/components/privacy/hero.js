@@ -3,15 +3,31 @@ import Image from "next/image";
 
 const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
-    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[10vh]">
+    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[2vh]">
       <div className="p-[2vw] relative">
+      <motion.p
+          initial={{ opacity: 0, y: 50, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="font-medium text-[4vw] sm:text-[1.5vw] text-[#1A2DE9] text-center sm:w-[62vw] mb-[2vh]"
+        >
+          Privacy Policy
+        </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 50, scale: 0.5 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="font-semibold text-[17.5vw] w-[80vw] sm:text-[6.875vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
+          className="font-semibold text-[17.5vw] w-[70vw] sm:text-[7vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
         >
-          Privacy Policy
+          We respect
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 50, scale: 0.5 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="font-semibold text-[17.5vw] w-[70vw] sm:text-[7vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
+        >
+         your privacy
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -72,10 +88,8 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
         transition={{ duration: 1 }}
         className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center"
       >
-        Protecting your privacy is fundamental to Euclid Learn LLC (&quot;Euclid
-        Learn&quot;). This Privacy Policy applies to our website,
-        euclidlearn.com, and governs data collection and usage. By using our
-        website, you consent to the data practices described in this policy.{" "}
+                  Your privacy matters to us at EUCLID. We respect the information we collect on our website.
+
       </motion.p>
     </div>
   );
