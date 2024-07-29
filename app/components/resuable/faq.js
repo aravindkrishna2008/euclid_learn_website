@@ -8,32 +8,32 @@ const Faq = () => {
   const faqData = [
     {
       question:
-        "Are there any additional resources or materials provided for students?",
+        "What is the process for enrolling my student in your program?",
       answer:
-        "Yes, we offer a range of supplementary resources including PowerPoint slides, high-quality worksheets, answer keys with step-by-step solutions, and professional lecture videos from expert private teachers.",
+        "Enrolling is simple and smooth. Contact us to schedule an initial consultation, where we’ll assess your student’s needs and match them with a suitable teacher. We’ll then arrange sessions at your convenience to get started.        ",
     },
     {
       question:
-        "Do you provide homework help in addition to regular coaching sessions?",
+        "What kind of feedback can parents expect from teachers?        ",
       answer:
-        "Yes, we provide homework help alongside our regular coaching sessions to ensure that students fully grasp the material.",
+        "Parents receive regular, detailed feedback including progress reports, session summaries, and insights into strengths and areas for growth. We also provide free monthly meetings with teachers to discuss progress and address any concerns.        ",
     },
     {
       question:
-        "How do you keep parents/guardians informed about their child's progress?",
+        "Do you provide homework help in addition to regular classes?        ",
       answer:
-        "We keep parents/guardians informed through regular progress reports, parent-teacher meetings, and an online portal where they can track their child's performance.",
+        "Absolutely, we offer homework help alongside regular classes. Our tutors provide targeted support to ensure students excel in their assignments and build a deeper understanding of the material.        ",
     },
     {
       question:
-        "Can lessons be customized to focus on specific topics or areas of difficulty?",
+        "Are your tutoring sessions one-on-one or in groups?        ",
       answer:
-        "Yes, lessons can be customized to focus on specific topics or areas of difficulty to cater to the individual needs of each student.",
+        "We provide both one-on-one and small group sessions. One-on-one sessions offer personalized attention, while small groups promote collaboration and peer support. Group sizes are kept small for effective support.        ",
     },
     {
-      question: "What sets you apart from others in the area?",
+      question: "What qualifications do your teachers have for specialized subjects?      ",
       answer:
-        "Our personalized approach, highly qualified tutors, and comprehensive resources set us apart from others in the area.",
+        "Our teachers are highly qualified with advanced degrees and extensive teaching experience. For example, our USACO teacher has trained students for the International Indian Informatics Olympiad, is an ICPC World Finalist, a Codeforces International Master (99.2nd percentile), and excels at the Indian Institute of Technology. ",
     },
   ];
 
