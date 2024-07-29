@@ -23,31 +23,8 @@ const Teachers = ({ teacherRef }) => {
         teaching experience.
       </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
-        {/*<motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
-        >
-          <Image
-            width={300}
-            height={300}
-            src="/team/Anirudh.png"
-            className="object-cover rounded-[1.6vw]"
-          />
-          <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
-              Anirudh Shyam
-            </p>
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              4 Yrs of Mentoring Experience
-            </p>
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-              1580 SAT Score
-            </p>
-          </div>
-  </motion.div>*/}
         
+
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -55,10 +32,10 @@ const Teachers = ({ teacherRef }) => {
           className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
         >
           <Image
-            width={10000}
-            height={10000}
             src="/team/orange3.png"
-            className="object-cover rounded-[2vw] h-[24vw] w-[750vw]"
+            width={300}
+            height={300}
+            className="object-cover rounded-[2vw] fixed-size"
           />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
@@ -74,6 +51,9 @@ const Teachers = ({ teacherRef }) => {
             </p>
           </div>
         </motion.div>
+
+        
+
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -81,49 +61,11 @@ const Teachers = ({ teacherRef }) => {
           className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
         >
           <Image
-            width={1000}
-            height={1000}
-            src="/team/someguy.webp"
-            className="object-cover rounded-[2vw] h-[24vw] w-[750vw]"
+            src="/team/Abhinav.png"
+            width={300}
+            height={300}
+            className="object-cover rounded-[2vw] fixed-size"
           />
-          <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
-            Ritam Chakraborty
-            </p>
-          
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-            CDSS @ UC Berkeley
-            </p>
-          </div>
-        </motion.div>
-        {/*<motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
-        >
-          <Image
-            width={1000}
-            height={1000}
-            src="/team/bharad.webp"
-            className=" rounded-[2vw] h-[24vw] w-[700vw] "
-          />
-          <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
-              Bharad Raghavan
-            </p>
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw] mb-[2vw]">
-              Stanford Computer Science Graduate
-            </p>
-          </div>
-</motion.div>*/}
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
-        >
-          <Image width={10000} height={10000} src="/team/Abhinav.png" />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Abhinav Raja
@@ -138,13 +80,19 @@ const Teachers = ({ teacherRef }) => {
             </p>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
           className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
         >
-          <Image width={10000} height={10000} src="/team/Woojin.png" />
+          <Image
+            src="/team/Woojin.png"
+            width={300}
+            height={300}
+            className="object-cover rounded-[2vw] fixed-size"
+          />
           <div>
             <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Woojin Yoon
@@ -157,8 +105,32 @@ const Teachers = ({ teacherRef }) => {
             </p>
           </div>
         </motion.div>
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col gap-[1.875vw] justify-center items-center text-center"
+        >
+          <Image
+            src="/team/someguy.webp"
+            width={300}
+            height={300}
+            className="object-cover rounded-[2vw] fixed-size"
+          />
+          <div>
+            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+              Ritam Chakraborty
+            </p>
+            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
+              CDSS @ UC Berkeley
+            </p>
+            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
+            
+            </p>
+          </div>
+        </motion.div>
       </div>
-      {/* <div ref={teacherRef}></div> */}
+      <div ref={teacherRef}></div>
     </div>
   );
 };

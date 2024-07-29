@@ -84,3 +84,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.fixed-size {
+  width: 300px; /* Set your desired width */
+  height: 300px; /* Set your desired height */
+}
