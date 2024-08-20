@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Approach = () => {
   return (
-    <div className="bg-[#F5F7FA] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
+    <section className="bg-[#F5F7FA] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -21,59 +21,65 @@ const Approach = () => {
         Our Approach to SAT
       </motion.h1>
       <div className="flex w-[100%] justify-between flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
-        <motion.div
+        <motion.article
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="bg-[#ffffff] rounded-[1.25vw] border-2 shadow-xl border-[#3958F2] items-center p-[5vw] sm:p-[2.5vw]"
         >
-          <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
-            Step 1
-          </p>
-          <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-            Assessment
-          </h1>
+          <header>
+            <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
+              Step 1
+            </p>
+            <h2 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
+              Assessment
+            </h2>
+          </header>
           <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
             Upon enrollment, we gather info from you about your academic
             background, study style, and goals.
           </p>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.article
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="bg-[#ffffff] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]"
         >
-          <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
-            Step 2
-          </p>
-          <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-            Match
-          </h1>
+          <header>
+            <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
+              Step 2
+            </p>
+            <h2 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
+              Match
+            </h2>
+          </header>
           <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw] mb-[3.5vw]">
             Once we understand your needs, we select the tutor who is the best
             fit for the results you wish to achieve.
           </p>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        <motion.article
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="bg-[#ffffff] rounded-[1.25vw] items-center p-[5vw] sm:p-[2.5vw]"
         >
-          <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
-            Step 3
-          </p>
-          <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-            A Custom Plan
-          </h1>
+          <header>
+            <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
+              Step 3
+            </p>
+            <h2 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
+              A Custom Plan
+            </h2>
+          </header>
           <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
             Each tutor creates a study plan to fit each individual
             student&apos;s needs and schedule.
           </p>
-        </motion.div>
+        </motion.article>
       </div>
-    </div>
+    </section>
   );
 };
 

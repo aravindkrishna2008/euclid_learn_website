@@ -47,14 +47,14 @@ const FreeTutoring = ({ handleClick, freeTutoringRefClick }) => {
   };
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className="bg-[#3958F2] py-[10vw] px-[6.25vw]"
     >
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between">
-        <div className="w-[80vw] flex flex-col gap-[2vw] sm:gap-0">
+        <header className="w-[80vw] flex flex-col gap-[2vw] sm:gap-0">
           <h1
             onClick={freeTutoringRefClick}
             className="sm:text-[5vw] text-[10vw] text-white leading-[105%] font-semibold"
@@ -64,31 +64,34 @@ const FreeTutoring = ({ handleClick, freeTutoringRefClick }) => {
           <p className="mt-[3.125vw] w-[65%] text-[4vw] sm:text-[1.4vw] text-white font-semibold leading-[130%]">
             Fill the form or contact us to claim your 1-Hour Free Tutoring.
           </p>
-
-          <div className="flex flex-row mt-[1.25vw] items-center">
-            <Image
-              width={10000}
-              height={10000}
-              className="sm:w-[1.875vw] w-[5vw]"
-              src="/icons/general_icons/mail.svg"
-            />
-            <p className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw] ">
-              euclidlearn@gmail.com
-            </p>
-          </div>
-          <div className="flex flex-row mt-[0.3vw] items-center">
-            <Image
-              width={10000}
-              height={10000}
-              className="sm:w-[1.875vw] w-[5vw]"
-              src="/icons/general_icons/phone.svg"
-            />
-            <p className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw] ">
-              +1 408-706-6234
-            </p>
-          </div>
-        </div>
-        <motion.div
+          <address className="not-italic mt-[1.25vw]">
+            <div className="flex flex-row items-center">
+              <Image
+                width={10000}
+                height={10000}
+                className="sm:w-[1.875vw] w-[5vw]"
+                src="/icons/general_icons/mail.svg"
+                alt="Mail Icon"
+              />
+              <a href="mailto:euclidlearn@gmail.com" className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw]">
+                euclidlearn@gmail.com
+              </a>
+            </div>
+            <div className="flex flex-row mt-[0.3vw] items-center">
+              <Image
+                width={10000}
+                height={10000}
+                className="sm:w-[1.875vw] w-[5vw]"
+                src="/icons/general_icons/phone.svg"
+                alt="Phone Icon"
+              />
+              <a href="tel:+14087066234" className="text-white font-light ml-[1.25vw] text-[3vw] sm:text-[1.25vw]">
+                +1 408-706-6234
+              </a>
+            </div>
+          </address>
+        </header>
+        <motion.aside
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -152,14 +155,14 @@ const FreeTutoring = ({ handleClick, freeTutoringRefClick }) => {
             />
             <button
               type="submit"
-              className="bg-[#F3B71D] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] fomt-semibold text-[3vw] sm:text-[1vw] font-semibold"
+              className="bg-[#F3B71D] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#e7b841] transition-all mt-[4vw] sm:mt-0 sm:w-[70%] text-[#181953] rounded-full sm:py-[1vw] py-[3vw] px-[1.875vw] font-semibold text-[3vw] sm:text-[1vw] font-semibold"
             >
               Claim 1-Hour Free Tutoring
             </button>
           </form>
-        </motion.div>
+        </motion.aside>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

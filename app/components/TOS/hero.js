@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
-    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[10vh]">
+    <section className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[10vh]">
       <div className="p-[2vw] relative">
         <motion.h1
           initial={{ opacity: 0, y: 50, scale: 0.5 }}
@@ -13,7 +13,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
         >
           Terms of Service
         </motion.h1>
-        <motion.div
+        <motion.figure
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -23,10 +23,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_blue.svg"
-            alt="hero"
+            alt="Decorative smiley"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
@@ -36,10 +36,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="hero"
+            alt="Decorative smiley"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
@@ -49,10 +49,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_orange.svg"
-            alt="hero"
+            alt="Decorative smiley"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -62,9 +62,9 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="hero"
+            alt="Decorative smiley"
           />
-        </motion.div>
+        </motion.figure>
       </div>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
@@ -72,10 +72,9 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
         transition={{ duration: 1 }}
         className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center"
       >
-      By using this website, you agree to our terms and conditions, including account confidentiality and adherence to our privacy policy. We offer algorithmic programming coaching for academic preparation.
+        By using this website, you agree to our terms and conditions, including account confidentiality and adherence to our privacy policy. We offer algorithmic programming coaching for academic preparation.
       </motion.p>
-      
-    </div>
+    </section>
   );
 };
 

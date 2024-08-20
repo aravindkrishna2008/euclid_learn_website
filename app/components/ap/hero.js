@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Hero = ({freeTutoringRefClick, pricerefclick}) => {
+const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
-    <div className="relative">
+    <section className="relative">
       <Image
         width={10000}
         height={10000}
@@ -11,14 +11,14 @@ const Hero = ({freeTutoringRefClick, pricerefclick}) => {
         alt="usaco hero"
         className="h-[85vh] w-[100%] object-cover"
       />
-      <div className="absolute top-[50%] -translate-y-[50%]  left-[10vw] sm:left-[6.25vw]">
+      <div className="absolute top-[50%] -translate-y-[50%] left-[10vw] sm:left-[6.25vw]">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-[15vw] sm:text-[6.875vw] text-[#25272C] font-semibold leading-[105%] w-[80vw] sm:w-[51vw] sm:tracking-[-3.52px]"
         >
-          AP Tutoring{" "}
+          AP Tutoring
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -31,23 +31,23 @@ const Hero = ({freeTutoringRefClick, pricerefclick}) => {
           exams and master the material.
         </motion.p>
         <div className="flex flex-col sm:flex-row mt-[5vw] sm:mt-[1.5vw] gap-[2vw] sm:gap-[0.9375vw]">
-          <motion.div
+          <motion.button
             onClick={freeTutoringRefClick}
             whileHover={{ scale: 1.05, translateY: -5 }}
             className="sm:text-[1.09375vw] hover:bg-[#314ac7] transition-all hover:-translate-y-1 duration-200 hover:scale-105 text-[4vw] leading-[150%] font-semibold tracking-[0.02vw] px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] cursor-pointer bg-[#3958F2] rounded-full text-white"
           >
             Claim 1-Hour Free Tutoring
-          </motion.div>
-          <motion.div
+          </motion.button>
+          <motion.button
             whileHover={{ scale: 1.05, translateY: -5 }}
             onClick={pricerefclick}
-            className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:bg-[#314ac7] hover:text-[#ffffff] border-[#ffffff] hover:border-[#314ac7] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#ffffff] rounded-full "
+            className="sm:text-[1.09375vw] text-[4vw] leading-[150%] border hover:bg-[#314ac7] hover:text-[#ffffff] border-[#ffffff] hover:border-[#314ac7] font-semibold tracking-[0.02vw] cursor-pointer px-[5vw] py-[3vw] sm:px-[1.875vw] sm:py-[1.09375vw] text-[#ffffff] rounded-full"
           >
             View Pricing
-          </motion.div>
+          </motion.button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

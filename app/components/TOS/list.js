@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const Grid = () => {
   return (
-    <div className="relative bg-white text-gray-900 pt-[10vw] pb-[10vw]">
+    <article className="relative bg-white text-gray-900 pt-[10vw] pb-[10vw]">
       <div className="flex justify-center items-center min-h-screen p-4">
-        <div className="w-full max-w-2xl">
+        <section className="w-full max-w-2xl">
           <div className="space-y-16">
-            {/* Section: What information do we collect? */}
-            <div className="">
+            {/* Section: Agreement between User and Euclid Learn LLC */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Agreement between User and Euclid Learn LLC
               </h2>
@@ -26,10 +26,10 @@ const Grid = () => {
                 Computing Olympiad, standardized tests, and other academic
                 endeavors.
               </p>
-            </div>
+            </section>
 
-            {/* Section: How do we use your information? */}
-            <div className="">
+            {/* Section: Privacy Policy */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">Privacy Policy</h2>
               <p className="text-base leading-6 mb-4 text-gray-500">
                 Your use of https://euclidlearn.com is subject to Euclid
@@ -37,9 +37,10 @@ const Grid = () => {
                 which also governs the Site and informs users of our data
                 collection practices.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Electronic Communications */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Electronic Communications
               </h2>
@@ -52,9 +53,10 @@ const Grid = () => {
                 satisfy any legal requirement that such communications be in
                 writing.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Your Account */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">Your Account</h2>
               <p className="text-base leading-6 mb-4 text-gray-500">
                 If you use this site, you are responsible for maintaining the
@@ -69,9 +71,10 @@ const Grid = () => {
                 terminate accounts, or remove or edit content in our sole
                 discretion.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Children Under Thirteen */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Children Under Thirteen
               </h2>
@@ -82,9 +85,10 @@ const Grid = () => {
                 https://euclidlearn.com only with the permission of a parent or
                 guardian.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Links to Third Party Sites/Third Party Services */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Links to Third Party Sites/Third Party Services
               </h2>
@@ -107,9 +111,10 @@ const Grid = () => {
                 service, or functionality on behalf of https://euclidlearn.com
                 users and customers.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: No Unlawful or Prohibited Use/Intellectual Property */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 No Unlawful or Prohibited Use/Intellectual Property
               </h2>
@@ -148,9 +153,10 @@ const Grid = () => {
                 property of Euclid Learn or our licensors except as expressly
                 authorized by these Terms.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Third Party Accounts */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Third Party Accounts
               </h2>
@@ -163,9 +169,10 @@ const Grid = () => {
                 third-party sites). If you do not want information about you to
                 be shared in this manner, do not use this feature.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: International Users */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 International Users
               </h2>
@@ -178,9 +185,10 @@ const Grid = () => {
                 https://euclidlearn.com in any country or in any manner
                 prohibited by any applicable laws, restrictions, or regulations.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Indemnification */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">Indemnification</h2>
               <p className="text-base leading-6 mb-4 text-gray-500">
                 You agree to indemnify, defend, and hold harmless Euclid Learn,
@@ -196,24 +204,10 @@ const Grid = () => {
                 indemnification by you, in which event you will fully cooperate
                 with Euclid Learn in asserting any available defenses.
               </p>
-            </div>
+            </section>
 
-            <div className="">
-              <h2 className="text-xl font-semibold mb-4">
-                International Users
-              </h2>
-              <p className="text-base leading-6 mb-4 text-gray-500">
-                The Service is controlled, operated, and administered by Euclid
-                Learn from our offices within the USA. If you access the Service
-                from a location outside the USA, you are responsible for
-                compliance with all local laws. You agree that you will not use
-                the Euclid Learn Content accessed through
-                https://euclidlearn.com in any country or in any manner
-                prohibited by any applicable laws, restrictions, or regulations.
-              </p>
-            </div>
-
-            <div className="">
+            {/* Section: Arbitration */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">Arbitration</h2>
               <p className="text-base leading-6 mb-4 text-gray-500">
                 In the event the parties are not able to resolve any dispute
@@ -242,9 +236,10 @@ const Grid = () => {
                 Arbitrator. This arbitration provision shall survive the
                 termination of these Terms and Conditions.
               </p>
-            </div>
+            </section>
 
-            <div className="">
+            {/* Section: Liability Disclaimer */}
+            <section>
               <h2 className="text-xl font-semibold mb-4">
                 Liability Disclaimer
               </h2>
@@ -276,11 +271,11 @@ const Grid = () => {
                 PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY
                 INFORMATION, SOFTWARE, PRODUCTS, SERVICES, AND RELATED GRAPHICS.
               </p>
-            </div>
+            </section>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -34,7 +34,7 @@ const OfferingModal = ({ offering, keyConcepts, testingPractices, freeTutoringRe
   }
 
   return (
-    <div className="flex relative transition-all duration-300 flex-row gap-[0.625vw]">
+    <section className="flex relative transition-all duration-300 flex-row gap-[0.625vw]">
       <h1>{offering}</h1>
       <Image
         src="/icons/general_icons/info-circle.svg"
@@ -43,6 +43,7 @@ const OfferingModal = ({ offering, keyConcepts, testingPractices, freeTutoringRe
         }`}
         height={1000}
         width={1000}
+        alt="Info"
         onClick={() => setShow(true)}
       />
 
@@ -56,15 +57,14 @@ const OfferingModal = ({ offering, keyConcepts, testingPractices, freeTutoringRe
         } rounded-[1.875vw] text-center absolute bg-white p-[10vw] sm:py-[3.75vw] px-[5vw] sm:px-[2.5vw] flex flex-col`}
         style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
       >
-        <h1 className="sm:text-[1.4vw] text-[6vw] text-black font-semibold">
+        <h2 className="sm:text-[1.4vw] text-[6vw] text-black font-semibold">
           {offering}
-        </h1>
+        </h2>
         <p className="font-light sm:mt-[1.875vw] mt-[7vw] text-[#25272C] text-[4vw] sm:text-[1vw]">
-          <span className="font-semibold"> Key Concepts:</span> {keyConcepts}
+          <strong>Key Concepts:</strong> {keyConcepts}
         </p>
         <p className="font-light mt-[5vw] sm:mt-[1.25vw] text-[#25272C] text-[4vw] sm:text-[1vw]">
-          <span className="font-semibold"> Testing Practice:</span>{" "}
-          {testingPractices}
+          <strong>Testing Practice:</strong> {testingPractices}
         </p>
         <div className="flex flex-col w-[100%] items-center justify-center sm:flex-row-reverse mt-[5vw] sm:mt-[1.5vw] gap-[2vw] sm:gap-[0.9375vw]">
           <button
@@ -81,7 +81,7 @@ const OfferingModal = ({ offering, keyConcepts, testingPractices, freeTutoringRe
           </button>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

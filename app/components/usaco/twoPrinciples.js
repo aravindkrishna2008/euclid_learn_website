@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TwoPrinciples = () => {
   return (
-    <div className="bg-[#293CE7] pb-[30vw] py-[20vw] sm:pb-[20vw] relative sm:py-[10vw] flex flex-col items-center justify-center">
+    <section className="bg-[#293CE7] pb-[30vw] py-[20vw] sm:pb-[20vw] relative sm:py-[10vw] flex flex-col items-center justify-center">
       <Image
         width={10000}
         height={10000}
@@ -49,12 +49,14 @@ const TwoPrinciples = () => {
             imgSrc: "/icons/general_icons/medal.svg",
           },
         ].map((item, index) => (
-          <motion.div
+          <motion.article
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className={`flex flex-col bg-[#3958F2] rounded-[1.875vw] w-[80vw] sm:w-[28vw] py-[5vw] px-[5vw] sm:px-[2.5vw] ${index === 1 ? "translate-y-0 sm:translate-y-[6.25vw]" : ""}`}
+            className={`flex flex-col bg-[#3958F2] rounded-[1.875vw] w-[80vw] sm:w-[28vw] py-[5vw] px-[5vw] sm:px-[2.5vw] ${
+              index === 1 ? "translate-y-0 sm:translate-y-[6.25vw]" : ""
+            }`}
           >
             <Image
               width={10000}
@@ -63,16 +65,16 @@ const TwoPrinciples = () => {
               alt={item.title}
               className="sm:w-[3.75vw] sm:h-[3.75vw] sm:block hidden object-cover"
             />
-            <h1 className="sm:text-[2vw] text-[5vw] mt-[3.4375vw] font-semibold w-[50vw] sm:w-[16vw] leading-[120%] text-white">
+            <h2 className="sm:text-[2vw] text-[5vw] mt-[3.4375vw] font-semibold w-[50vw] sm:w-[16vw] leading-[120%] text-white">
               {item.title}
-            </h1>
+            </h2>
             <p className="sm:text-[1.25vw] text-[4vw] text-white font-light leading-[160%] tracking-[0.16px] mt-[1vw]">
               {item.description}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <div className="bg-[#F7F2DF] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
+    <section className="bg-[#F7F2DF] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,26 +41,28 @@ const HowItWorks = () => {
               "Students are paired with a dedicated mentor who will lead them through each level until they achieve Platinum.",
           },
         ].map((item, index) => (
-          <motion.div
+          <motion.article
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="bg-[#FDF9E9] rounded-[1.25vw] border-2 shadow-xl border-[#3958F2] items-center p-[5vw] sm:p-[2.5vw]"
+            className="bg-[#FDF9E9] rounded-[1.25vw] border-2 shadow-xl border-[#3958F2] flex items-center p-[5vw] sm:p-[2.5vw]"
           >
-            <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
-              {item.step}
-            </p>
-            <h1 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
-              {item.title}
-            </h1>
+            <header>
+              <p className="sm:text-[1.4vw] text-[4vw] mt-[0.625vw] font-semibold text-[#3958F2]">
+                {item.step}
+              </p>
+              <h2 className="sm:text-[2vw] text-[5vw] font-semibold leading-[120%]">
+                {item.title}
+              </h2>
+            </header>
             <p className="font-light text-[#383A42] text-[4vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2.5vw]">
               {item.description}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

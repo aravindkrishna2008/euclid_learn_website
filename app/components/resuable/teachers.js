@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Teachers = ({ teacherRef }) => {
   return (
-    <div className="bg-white flex flex-col items-center justify-center py-[10vw] px-[17vw]">
+    <section className="bg-white flex flex-col items-center justify-center py-[10vw] px-[17vw]">
       <motion.h1
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -18,14 +18,11 @@ const Teachers = ({ teacherRef }) => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-[#25272C] font-light text-[4vw] sm:text-[1.25vw] mt-[1vw] text-center w-[80vw] sm:w-[50%]"
       >
-        Our team is composed of diligent top-performing students with
-        prestigious awards, high standardized test scores, and extensive
-        teaching experience.
+        Our team is composed of diligent top-performing students with prestigious awards, high standardized test scores, and extensive teaching experience.
       </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
         
-
-        <motion.div
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -36,11 +33,12 @@ const Teachers = ({ teacherRef }) => {
             width={300}
             height={300}
             className="object-cover rounded-[2vw] fixed-size"
+            alt="Shivang Tiwari"
           />
           <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+            <h2 className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Shivang Tiwari
-            </p>
+            </h2>
             <p className="text-[#196aff] font-light text-[3vw] sm:text-[1vw] underline">
               <a href="https://icpc.global/ICPCID/TA70T9WDEW5N" target="_blank" rel="noopener noreferrer">
                 ICPC 2023 World Finalist
@@ -50,11 +48,9 @@ const Teachers = ({ teacherRef }) => {
               EE at IIT Bombay
             </p>
           </div>
-        </motion.div>
+        </motion.article>
 
-        
-
-        <motion.div
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -65,11 +61,12 @@ const Teachers = ({ teacherRef }) => {
             width={300}
             height={300}
             className="object-cover rounded-[2vw] fixed-size"
+            alt="Abhinav Raja"
           />
           <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+            <h2 className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Abhinav Raja
-            </p>
+            </h2>
             <p className="text-[#196aff] font-light text-[3vw] sm:text-[1vw] underline">
               <a href="https://usaco.org/current/data/open24_gold_results.html#:~:text=Abhinav%20Raja" target="_blank" rel="noopener noreferrer">
                 USACO Platinum
@@ -79,9 +76,9 @@ const Teachers = ({ teacherRef }) => {
               1580 SAT Score
             </p>
           </div>
-        </motion.div>
+        </motion.article>
 
-        <motion.div
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -92,11 +89,12 @@ const Teachers = ({ teacherRef }) => {
             width={300}
             height={300}
             className="object-cover rounded-[2vw] fixed-size"
+            alt="Woojin Yoon"
           />
           <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+            <h2 className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Woojin Yoon
-            </p>
+            </h2>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
               240 USAMO Index
             </p>
@@ -104,8 +102,9 @@ const Teachers = ({ teacherRef }) => {
               1570 SAT Score
             </p>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.article>
+        
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -116,22 +115,20 @@ const Teachers = ({ teacherRef }) => {
             width={300}
             height={300}
             className="object-cover rounded-[2vw] fixed-size"
+            alt="Ritam Chakraborty"
           />
           <div>
-            <p className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
+            <h2 className="text-[#5B616E] text-[5vw] sm:text-[1.4vw] font-semibold tracking-normal">
               Ritam Chakraborty
-            </p>
+            </h2>
             <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
               CDSS @ UC Berkeley
             </p>
-            <p className="text-[#8E95A2] font-light text-[3vw] sm:text-[1vw]">
-            
-            </p>
           </div>
-        </motion.div>
+        </motion.article>
       </div>
       <div ref={teacherRef}></div>
-    </div>
+    </section>
   );
 };
 

@@ -57,12 +57,12 @@ const HeroCarousel = ({ freeTutoringRefClick }) => {
   };
 
   return (
-    <div className="sm:h-[90vh] relative  sm:rounded-[1.875vw] overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw]  pb-7">
+    <section className="sm:h-[90vh] relative sm:rounded-[1.875vw] overflow-hidden flex items-center justify-center sm:mb-[10vw] mt-[11vw] pb-7" aria-label="Hero Carousel">
       <AnimatePresence>
         {items.map(
           (item, index) =>
             index === currentSlide && (
-              <motion.div
+              <motion.article
                 key={index}
                 initial={{ opacity: 0.5, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -81,11 +81,11 @@ const HeroCarousel = ({ freeTutoringRefClick }) => {
                   link={item.link} // Pass the link prop
                   freeTutoringRefClick={freeTutoringRefClick}
                 />
-              </motion.div>
+              </motion.article>
             )
         )}
       </AnimatePresence>
-    </div>
+    </section>
   );
 };
 

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Pricing = ({freeTutoringRefClick}) => {
+const Pricing = ({ freeTutoringRefClick }) => {
   return (
-    <div className="bg-[#3958F2] px-[6.25vw] py-[9.3vw] flex flex-col items-center justify-center">
-      <div className="text-center">
+    <section className="bg-[#3958F2] px-[6.25vw] py-[9.3vw] flex flex-col items-center justify-center">
+      <header className="text-center">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -24,9 +24,9 @@ const Pricing = ({freeTutoringRefClick}) => {
           After each session, mentors set action items, assign homework, and
           share lecture resources for review.
         </motion.p>
-      </div>
+      </header>
       <div className="flex flex-col sm:flex-row mt-[5vw] gap-[4vw] sm:gap-[1.25vw]">
-        <motion.div
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -35,12 +35,12 @@ const Pricing = ({freeTutoringRefClick}) => {
           }}
           className="rounded-[1.875vw] h-[45vw] sm:h-[23vw] sm:w-[43vw] w-[80vw] flex flex-col justify-between p-[5vw] sm:p-[2.5vw] text-[#332B00]"
         >
-          <p className="sm:text-[1.1vw] text-[4vw] font-semibold">Gold</p>
+          <h2 className="sm:text-[1.1vw] text-[4vw] font-semibold">Gold</h2>
           <div className="flex flex-row items-center">
             <div className="flex flex-col mr-[4.5vw]">
-              <h1 className="sm:text-[4.5vw] text-[10vw] font-semibold leading-[105%]">
+              <p className="sm:text-[4.5vw] text-[10vw] font-semibold leading-[105%]">
                 $70
-              </h1>
+              </p>
               <p className="sm:text-[2.25vw] text-[4vw] font-semibold tracking-[-0.255px] leading-[120%]">
                 per hour
               </p>
@@ -51,44 +51,47 @@ const Pricing = ({freeTutoringRefClick}) => {
               }}
               className="bg-black h-[5vh] w-[1px] mr-[4.5vw]"
             />
-            <div className="flex flex-col text-[3vw] sm:text-[1.15vw]">
-              <div className="flex flex-row items-center">
+            <ul className="flex flex-col text-[3vw] sm:text-[1.15vw]">
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">1 Student</p>
-              </div>
-              <div className="flex flex-row items-center">
+                <span className="ml-[1.15vw] font-light">1 Student</span>
+              </li>
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">Gold Mentor</p>
-              </div>
-              <div className="flex flex-row items-center">
+                <span className="ml-[1.15vw] font-light">Gold Mentor</span>
+              </li>
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">1 officer hour/week</p>
-              </div>
-            </div>
+                <span className="ml-[1.15vw] font-light">1 officer hour/week</span>
+              </li>
+            </ul>
           </div>
-          <div
+          <button
             onClick={freeTutoringRefClick}
             className="w-[100%] rounded-full cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#514501] transition-all bg-[#332B00] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center"
           >
             Claim 1-Hour Free Tutoring
-          </div>
-        </motion.div>
-        <motion.div
+          </button>
+        </motion.article>
+        <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -97,12 +100,12 @@ const Pricing = ({freeTutoringRefClick}) => {
           }}
           className="rounded-[1.875vw] h-[45vw] sm:h-[23vw] sm:w-[43vw] w-[80vw] flex flex-col justify-between p-[5vw] sm:p-[2.5vw] text-[#332B00]"
         >
-          <p className="sm:text-[1.1vw] text-[4vw] font-semibold">Platinum</p>
+          <h2 className="sm:text-[1.1vw] text-[4vw] font-semibold">Platinum</h2>
           <div className="flex flex-row items-center">
             <div className="flex flex-col mr-[4.5vw]">
-              <h1 className="sm:text-[4.5vw] text-[10vw] font-semibold leading-[105%]">
+              <p className="sm:text-[4.5vw] text-[10vw] font-semibold leading-[105%]">
                 $90
-              </h1>
+              </p>
               <p className="sm:text-[2.25vw] text-[4vw] font-semibold tracking-[-0.255px] leading-[120%]">
                 per hour
               </p>
@@ -113,45 +116,48 @@ const Pricing = ({freeTutoringRefClick}) => {
               }}
               className="bg-black h-[5vh] w-[1px] mr-[4.5vw]"
             />
-            <div className="flex flex-col text-[3vw] sm:text-[1.15vw]">
-              <div className="flex flex-row  items-center">
+            <ul className="flex flex-col text-[3vw] sm:text-[1.15vw]">
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">1 Student</p>
-              </div>
-              <div className="flex flex-row items-center">
+                <span className="ml-[1.15vw] font-light">1 Student</span>
+              </li>
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">Platinum Mentor</p>
-              </div>
-              <div className="flex flex-row items-center">
+                <span className="ml-[1.15vw] font-light">Platinum Mentor</span>
+              </li>
+              <li className="flex flex-row items-center">
                 <Image
                   width={10000}
                   height={10000}
                   src="/icons/general_icons/check-circle.svg"
                   className="sm:w-[1.15vw] w-[3vw] h-[3vw] sm:h-[1.15vw]"
+                  alt="Check mark icon"
                 />
-                <p className=" ml-[1.15vw] font-light">1 officer hour/week</p>
-              </div>
-            </div>
+                <span className="ml-[1.15vw] font-light">1 officer hour/week</span>
+              </li>
+            </ul>
           </div>
-          <div
+          <button
             onClick={freeTutoringRefClick}
             className="w-[100%] cursor-pointer hover:-translate-y-1 duration-200 hover:scale-105 hover:bg-[#3c404a] transition-all rounded-full bg-[#25272C] p-[1vw] font-semibold text-white text-[3vw] sm:text-[1vw] flex items-center justify-center"
           >
             Claim 1-Hour Free Tutoring
-          </div>
-        </motion.div>
+          </button>
+        </motion.article>
       </div>
-    </div>
+    </section>
   );
 };
 

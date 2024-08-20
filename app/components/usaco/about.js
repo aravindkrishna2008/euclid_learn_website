@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-[#DCE3FD] py-[20vw] sm:py-[10vw] gap-[4vw] flex flex-col sm:flex-row items-center justify-center">
-      <motion.div
+    <section className="bg-[#DCE3FD] py-[20vw] sm:py-[10vw] gap-[4vw] flex flex-col sm:flex-row items-center justify-center">
+      <motion.figure
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
@@ -15,9 +15,10 @@ const About = () => {
           src="/icons/general_icons/block.gif"
           unoptimized
           className="sm:w-[25vw] w-[50vw]"
+          alt="USACO Block Image"
         />
-      </motion.div>
-      <motion.div
+      </motion.figure>
+      <motion.article
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.4 }}
@@ -29,12 +30,12 @@ const About = () => {
         <p className="sm:w-[37.5vw] w-[80vw] text-[#0F0F0F] text-[4vw] sm:text-[1.25vw] font-light">
           Euclid Learn excels in preparing students for the USA Computing
           Olympiad (USACO), a prestigious competition that demonstrates advanced
-          problem solving ability. Beyond coding, the USACO instills a strategic
+          problem-solving ability. Beyond coding, the USACO instills a strategic
           problem-solving mindset, shaping analytical thinkers to excel beyond
           the competition.
         </p>
-      </motion.div>
-    </div>
+      </motion.article>
+    </section>
   );
 };
 

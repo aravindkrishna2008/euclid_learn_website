@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
-    <div className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[2vh]">
+    <section className="sm:h-[70vh] h-[80vh] py-[10vh] flex flex-col justify-center items-center mt-[2vh]">
       <div className="p-[2vw] relative">
-      <motion.p
+        <motion.p
           initial={{ opacity: 0, y: 50, scale: 0.5 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -27,9 +27,9 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
           transition={{ duration: 0.5 }}
           className="font-semibold text-[17.5vw] w-[70vw] sm:text-[7vw] text-[#25272C] tracking-[-0.275vw] leading-[100%] text-center sm:w-[62vw]"
         >
-         your privacy
+          your privacy
         </motion.h1>
-        <motion.div
+        <motion.figure
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -39,10 +39,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_blue.svg"
-            alt="hero"
+            alt="Smiley blue icon"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
@@ -52,10 +52,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="hero"
+            alt="Smiley yellow icon"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
@@ -65,10 +65,10 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_orange.svg"
-            alt="hero"
+            alt="Smiley orange icon"
           />
-        </motion.div>
-        <motion.div
+        </motion.figure>
+        <motion.figure
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -78,9 +78,9 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="hero"
+            alt="Smiley yellow icon"
           />
-        </motion.div>
+        </motion.figure>
       </div>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
@@ -88,10 +88,9 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
         transition={{ duration: 1 }}
         className="text-[#25272C] text-[4vw] sm:text-[1.5625vw] leading-[150%] font-light tracking-[-0.015625vw] w-[80vw] sm:w-[50vw] text-center"
       >
-                  Your privacy matters to us at EUCLID. We respect the information we collect on our website.
-
+        Your privacy matters to us at EUCLID. We respect the information we collect on our website.
       </motion.p>
-    </div>
+    </section>
   );
 };
 

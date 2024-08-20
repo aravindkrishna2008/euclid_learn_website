@@ -9,7 +9,7 @@ const PremiumTutoring = () => {
       transition={{ duration: 1 }}
       className="flex flex-col items-center h-screen bg-blue-600 text-white"
     >
-      <div className="text-center mt-[20vh]">
+      <header className="text-center mt-[20vh]">
         <h1 className="text-4xl sm:text-[4vw] text-[10vw] font-semibold leading-[120%]">
           Premium Tutoring
         </h1>
@@ -25,10 +25,11 @@ const PremiumTutoring = () => {
               className="sm:w-[100vw] w-[30vw] sm:h-[10vw] mb-8 mt-8"
               width={1000}
               height={1000}
+              alt="Premium Tutoring Medal"
             />
           </motion.div>
         </div>
-      </div>
+      </header>
       <motion.p
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

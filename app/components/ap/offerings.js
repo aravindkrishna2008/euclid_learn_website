@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 
 const Offerings = () => {
   return (
-    <div className="bg-[#293CE7] relative py-[20vw] text-white sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
+    <section className="bg-[#293CE7] relative py-[20vw] text-white sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
       <Image
         width={10000}
         height={10000}
         src="/icons/smiley/blue_yellow_smile.svg"
         className="absolute -top-[5vw] left-[10vw] z-10 sm:w-[10vw] w-[10vw]"
+        alt="Smiley"
       />
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
@@ -17,7 +18,7 @@ const Offerings = () => {
         transition={{ duration: 1 }}
         className="sm:text-[5vw] text-[10vw] w-[80vw] sm:w-[40vw] text-center leading-[105%] font-semibold tracking-[-1.92px]"
       >
-        Our AP Course Offerings{" "}
+        Our AP Course Offerings
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 150 }}
@@ -25,8 +26,7 @@ const Offerings = () => {
         transition={{ duration: 2 }}
         className="sm:w-[30vw] w-[80vw] text-[4vw] sm:text-[1.25vw] mt-[1.25vw] text-center font-light"
       >
-        Our AP Tutoring is available for these exams. Click the icon next to the
-        exam name to learn more about it.
+        Our AP Tutoring is available for these exams. Click the icon next to the exam name to learn more about it.
       </motion.p>
       <div className="flex w-[100%] justify-around flex-col sm:flex-row gap-[1.25vw] mt-[5vw]">
         {[
@@ -37,7 +37,7 @@ const Offerings = () => {
               {
                 offering: "AP Calculus AB/BC",
                 keyConcepts: "Differentiation, integration, limits, and application of derivatives and integrals.",
-                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB BC Calculus, including multiple-choice and free-response question practice."
+                testingPractices: "Weekly quizzes, timed exams, and comprehensive review sessions covering topics from both AB and BC Calculus, including multiple-choice and free-response question practice."
               },
               {
                 offering: "AP Precalculus",
@@ -105,10 +105,10 @@ const Offerings = () => {
             ]
           }
         ].map(({ category, iconSrc, offerings }, index) => (
-          <motion.div
+          <motion.article
             key={index}
             initial={{ opacity: 0, y: 150 }}
-            whileInView={{ opacity: 2, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow"
           >
@@ -117,19 +117,20 @@ const Offerings = () => {
               height={10000}
               src={iconSrc}
               className="sm:w-[4.375vw] border-black w-[10vw]"
+              alt={`${category} icon`}
             />
-            <p className="sm:text-[1.4vw] text-[5vw] text-white mt-[3.125vw] font-semibold">
+            <h2 className="sm:text-[1.4vw] text-[5vw] text-white mt-[3.125vw] font-semibold">
               {category}
-            </p>
+            </h2>
             <div className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]">
               {offerings.map((offering, i) => (
                 <OfferingModal key={i} {...offering} />
               ))}
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

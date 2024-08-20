@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AtAGlance = () => {
   return (
-    <div className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
+    <section className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const AtAGlance = () => {
             text: "Short-answer computational problems which increase in difficulty with each question."
           }
         ].map((item, index) => (
-          <motion.div
+          <motion.article
             key={index}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,10 +56,11 @@ const AtAGlance = () => {
               height={10000}
               src={item.src}
               className="sm:w-[4.375vw] w-[10vw]"
+              alt={item.title}
             />
-            <p className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
+            <h2 className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
               {item.title}
-            </p>
+            </h2>
             <p
               className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[1.25vw]"
               style={{
@@ -68,10 +69,10 @@ const AtAGlance = () => {
             >
               {item.text}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

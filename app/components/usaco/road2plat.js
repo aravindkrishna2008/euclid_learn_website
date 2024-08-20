@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Road2Plat = () => {
   return (
-    <div className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
+    <section className="bg-[#C0CEFD] text-[#0F0F0F] py-[20vw] sm:py-[10vw] px-[6.25vw] flex flex-col items-center justify-center">
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Road2Plat = () => {
               "At the platinum level, problems become extremely challenging. The top 24 contestants are invited to the USA National Training Camp.",
           },
         ].map((item, index) => (
-          <motion.div
+          <motion.article
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -60,20 +60,23 @@ const Road2Plat = () => {
               height={10000}
               src={item.imgSrc}
               className="sm:w-[4.375vw] w-[10vw]"
+              alt={`${item.level} Medal`}
             />
-            <p className={`sm:text-[1.4vw] text-[5vw] mt-[0.625vw] ${item.level.toLowerCase()}Medal font-semibold`}>
+            <h2
+              className={`sm:text-[1.4vw] text-[5vw] mt-[0.625vw] ${item.level.toLowerCase()}Medal font-semibold`}
+            >
               {item.level}
-            </p>
+            </h2>
             <p
               className="sm:w-[17vw] w-[60vw] font-light text-[3vw] sm:text-[1vw] leading-[170%] tracking-[0.28px] mt-[2vw]"
               style={{ color: "rgba(255, 255, 255, 0.70)" }}
             >
               {item.description}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
