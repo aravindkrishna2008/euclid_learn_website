@@ -36,53 +36,36 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div className="">
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
-      <header>
-        <Navbar
-          freeTutoringRefClick={freeTutoringRefClick}
-          pricerefclick={pricerefclick}
-          teacherClick={teacherClick}
+      <Navbar
+        freeTutoringRefClick={freeTutoringRefClick}
+        pricerefclick={pricerefclick}
+        teacherClick={teacherClick}
+      />
+      <div className="sm:px-[6.25vw] ">
+        <Hero />
+        <HeroCarousel
+          className="mt-[6.25vw]" // Add this line
         />
-      </header>
-      <main className="sm:px-[6.25vw]">
-        <section>
-          <Hero />
-        </section>
-        <section className="mt-[6.25vw]">
-          <HeroCarousel />
-        </section>
-        <section>
-          <WhyEuclid />
-        </section>
-        <section>
-          <Results freeTutoringRefClick={freeTutoringRefClick} />
-        </section>
-        <section>
-          <Quote freeTutoringRefClick={freeTutoringRefClick} />
-        </section>
-        <section ref={priceRef}>
-          <Pricing freeTutoringRefClick={freeTutoringRefClick} />
-        </section>
-        <section ref={teacherRef}>
-          <Teachers
-            freeTutoringRefClick={freeTutoringRefClick}
-            teacherRef={teacherRef}
-          />
-        </section>
-        <section>
-          <Faq />
-        </section>
-        <section ref={freeTutoringRef}>
-          <FreeTutoring />
-        </section>
-      </main>
-      <footer>
-        <Footer
-          freeTutoringRefClick={freeTutoringRefClick}
-          teacherClick={teacherClick}
-        />
-      </footer>
-    </>
+      </div>
+      <WhyEuclid />
+      <Results freeTutoringRefClick={freeTutoringRefClick} />
+      <Quote freeTutoringRefClick={freeTutoringRefClick} />
+      <div ref={priceRef}></div>
+      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
+      <div ref={teacherRef}></div>
+      <Teachers
+        freeTutoringRefClick={freeTutoringRefClick}
+        teacherRef={teacherRef}
+      />
+      <Faq />
+      <div ref={freeTutoringRef}></div>
+      <FreeTutoring />
+      <Footer
+        freeTutoringRefClick={freeTutoringRefClick}
+        teacherClick={teacherClick}
+      />
+    </div>
   );
 }
