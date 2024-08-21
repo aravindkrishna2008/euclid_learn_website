@@ -25,6 +25,7 @@ export default function USACO() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
+
   const freeTutoringRefClick = () => {
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -42,17 +43,27 @@ export default function USACO() {
   };
 
   return (
-    <div className="">
+    <>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
-      <Navbar
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-        teacherClick={teacherClick}
-      />{" "}
-      <Hero freeTutoringRefClick={freeTutoringRefClick} />
-      <Grid />
-      <FreeTutoring />
-      <Footer />
-    </div>
+      <header>
+        <Navbar
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+          teacherClick={teacherClick}
+        />
+      </header>
+      <main>
+        <Hero freeTutoringRefClick={freeTutoringRefClick} />
+        <section>
+          <Grid />
+        </section>
+        <section ref={freeTutoringRef}>
+          <FreeTutoring />
+        </section>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }

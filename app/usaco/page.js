@@ -20,6 +20,7 @@ export default function USACO() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
+
   const freeTutoringRefClick = () => {
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -37,31 +38,54 @@ export default function USACO() {
   };
 
   return (
-    <div className="">
+    <>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
-      <Navbar
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-        teacherClick={teacherClick}
-      />{" "}
-      <Hero
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-      />
-      <About />
-      <Road2Plat />
-      <TwoPrinciples />
-      <HowItWorks />
-      <Results freeTutoringRefClick={freeTutoringRefClick} />
-      <Quote freeTutoringRefClick={freeTutoringRefClick} />
-      <div ref={priceRef}></div>
-      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
-      <div ref={teacherRef}></div>
-      <Teachers freeTutoringRefClick={freeTutoringRefClick} />
-      <Faq />
-      <div ref={freeTutoringRef}></div>
-      <FreeTutoring />
-      <Footer />
-    </div>
+      <header>
+        <Navbar
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+          teacherClick={teacherClick}
+        />
+      </header>
+      <main>
+        <Hero
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+        />
+        <section>
+          <About />
+        </section>
+        <section>
+          <Road2Plat />
+        </section>
+        <section>
+          <TwoPrinciples />
+        </section>
+        <section>
+          <HowItWorks />
+        </section>
+        <section>
+          <Results freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section>
+          <Quote freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section ref={priceRef}>
+          <Pricing freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section ref={teacherRef}>
+          <Teachers freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section>
+          <Faq />
+        </section>
+        <section ref={freeTutoringRef}>
+          <FreeTutoring />
+        </section>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }

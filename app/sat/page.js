@@ -24,6 +24,7 @@ export default function USACO() {
   const freeTutoringRef = useRef(null);
   const priceRef = useRef(null);
   const teacherRef = useRef(null);
+
   const freeTutoringRefClick = () => {
     freeTutoringRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -41,28 +42,51 @@ export default function USACO() {
   };
 
   return (
-    <div className="">
+    <>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
-      <Navbar
-        freeTutoringRefClick={freeTutoringRefClick}
-        pricerefclick={pricerefclick}
-        teacherClick={teacherClick}
-      />{" "}
-      <Hero freeTutoringRefClick={freeTutoringRefClick} />
-      <HowItWorks />
-      <Grid />
-      <PremiumTutoring />
-      <Approach />
-      <ParentQuestionsSection />
-      <Quote freeTutoringRefClick={freeTutoringRefClick} />
-      <div ref={priceRef}></div>
-      <Pricing freeTutoringRefClick={freeTutoringRefClick} />
-      <div ref={teacherRef}></div>
-      <Teachers freeTutoringRefClick={freeTutoringRefClick} />
-      <Faq />
-      <div ref={freeTutoringRef}></div>
-      <FreeTutoring />
-      <Footer />
-    </div>
+      <header>
+        <Navbar
+          freeTutoringRefClick={freeTutoringRefClick}
+          pricerefclick={pricerefclick}
+          teacherClick={teacherClick}
+        />
+      </header>
+      <main>
+        <Hero freeTutoringRefClick={freeTutoringRefClick} />
+        <section>
+          <HowItWorks />
+        </section>
+        <section>
+          <Grid />
+        </section>
+        <section>
+          <PremiumTutoring />
+        </section>
+        <section>
+          <Approach />
+        </section>
+        <section>
+          <ParentQuestionsSection />
+        </section>
+        <section>
+          <Quote freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section ref={priceRef}>
+          <Pricing freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section ref={teacherRef}>
+          <Teachers freeTutoringRefClick={freeTutoringRefClick} />
+        </section>
+        <section>
+          <Faq />
+        </section>
+        <section ref={freeTutoringRef}>
+          <FreeTutoring />
+        </section>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
