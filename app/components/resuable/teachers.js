@@ -20,7 +20,7 @@ const Teachers = ({ teacherRef }) => {
       >
         Our team is composed of diligent top-performing students with prestigious awards, high standardized test scores, and extensive teaching experience.
       </motion.p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-[4vw] sm:gap-[1.25vw] mt-[5vw]">
         
         <motion.article
           initial={{ scale: 0.8, opacity: 0 }}
