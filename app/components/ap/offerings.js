@@ -6,12 +6,12 @@ const Offerings = () => {
   return (
     <section className="bg-[#293CE7] relative py-[20vw] text-white sm:py-[10vw] px-[5vw] flex flex-col items-center justify-center">
       <Image
-        width={10000}
-        height={10000}
-        src="/icons/smiley/blue_yellow_smile.svg"
-        className="absolute -top-[5vw] left-[10vw] z-10 sm:w-[10vw] w-[10vw]"
-        alt="Smiley"
-      />
+  width={10000}
+  height={10000}
+  src="/icons/smiley/blue_yellow_smile.svg"
+  className="absolute -top-[5vw] left-[10vw] z-10 sm:w-[10vw] w-[10vw]"
+  alt="Blue and yellow smiley face icon"
+/>
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -113,12 +113,12 @@ const Offerings = () => {
             className="bg-[#3958F2] rounded-[1.25vw] flex flex-col p-[10vw] sm:px-[2.5vw] sm:py-[3.75vw] flex-grow"
           >
             <Image
-              width={10000}
-              height={10000}
-              src={iconSrc}
-              className="sm:w-[4.375vw] border-black w-[10vw]"
-              alt={`${category} icon`}
-            />
+  width={10000}
+  height={10000}
+  src={iconSrc}
+  className="sm:w-[4.375vw] border-black w-[10vw]"
+  alt={`${category} category icon`}
+/>
             <h2 className="sm:text-[1.4vw] text-[5vw] text-white mt-[3.125vw] font-semibold">
               {category}
             </h2>

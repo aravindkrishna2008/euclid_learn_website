@@ -5,12 +5,12 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
   return (
     <section className="relative">
       <Image
-        width={10000}
-        height={10000}
-        src="/stock_image/ap/hero.png"
-        alt="usaco hero"
-        className="h-[85vh] w-[100%] object-cover"
-      />
+  width={10000}
+  height={10000}
+  src="/stock_image/ap/hero.png"
+  alt="USACO exam preparation hero banner"
+  className="h-[85vh] w-[100%] object-cover"
+/>
       <div className="absolute top-[50%] -translate-y-[50%] left-[10vw] sm:left-[6.25vw]">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}

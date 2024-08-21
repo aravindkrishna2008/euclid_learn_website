@@ -23,7 +23,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_blue.svg"
-            alt="Smiling blue icon"
+            alt="Blue smiley face icon"
           />
         </motion.div>
         <motion.div
@@ -36,7 +36,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="Smiling yellow icon"
+            alt="Yellow smiley face icon"
           />
         </motion.div>
         <motion.div
@@ -49,7 +49,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_orange.svg"
-            alt="Smiling orange icon"
+            alt="Orange smiley face icon"
           />
         </motion.div>
         <motion.div
@@ -62,7 +62,7 @@ const Hero = ({ freeTutoringRefClick, pricerefclick }) => {
             width={10000}
             height={10000}
             src="/icons/smiley/smile_yellow.svg"
-            alt="Smiling yellow icon"
+            alt="Yellow smiley face icon"
           />
         </motion.div>
       </header>

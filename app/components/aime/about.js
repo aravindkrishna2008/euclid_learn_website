@@ -16,7 +16,7 @@ const About = () => {
             className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw]"
             width={100}
             height={100}
-            alt="About AIME"
+            alt="Experienced math tutor discussing American Invitational Mathematics Exam"
           />
           <h2 className="text-[#202588] text-[8vw] sm:text-[2vw] tracking-[-0.28px] font-semibold leading-[120%]">
             About AIME
@@ -57,7 +57,7 @@ const About = () => {
               className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw]"
               width={100}
               height={100}
-              alt="Syllabus"
+              alt="Comprehensive tutoring syllabus covering algebra, geometry, and number theory"
             />
             <h2 className="text-[#202588] text-[8vw] sm:text-[2vw] tracking-[-0.28px] font-semibold leading-[120%]">
               Syllabus
@@ -84,7 +84,7 @@ const About = () => {
               className="sm:w-[3.75vw] w-[10vw] sm:h-[3.75vw]"
               width={100}
               height={100}
-              alt="Schedule"
+              alt="Tutoring schedule for AIME preparation, early-to-mid March"
             />
             <h2 className="text-[#202588] text-[8vw] sm:text-[2vw] tracking-[-0.28px] font-semibold leading-[120%]">
               Schedule

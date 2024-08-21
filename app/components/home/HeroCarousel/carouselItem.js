@@ -21,7 +21,7 @@ const CarouselItem = ({
         width={10000}
         height={10000}
         src={image}
-        alt={`${name} image`}
+        alt={`${name} featured image`}
         className="sm:w-[32.5vw] sm:h-[32.5vw] w-[80vw] h-[80vw] object-cover rounded-lg"
       />
       <div className="flex flex-col justify-center">

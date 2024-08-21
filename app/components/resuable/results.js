@@ -8,7 +8,7 @@ const Results = ({ freeTutoringRefClick }) => {
         width={10000}
         height={10000}
         src="/grid/noline.png"
-        alt="Background grid"
+        alt="Background grid euclid"
         className="absolute inset-0 w-full h-full object-cover rounded-3xl z-0 opacity-20"
       />
       <div className="w-full h-full flex flex-col z-10 items-center justify-center">

@@ -26,22 +26,26 @@ const AtAGlance = () => {
           {
             src: "/icons/general_icons/community_2.svg",
             title: "Top 2.5%",
-            text: "AIME qualifiers represent the top 2.5% of AMC 10 test-takers and the top 5% of AMC 12 test-takers."
+            text: "AIME qualifiers represent the top 2.5% of AMC 10 test-takers and the top 5% of AMC 12 test-takers.",
+            alt: "Top 2.5% AIME qualifiers representing top test-takers"
           },
           {
             src: "/icons/general_icons/list.svg",
             title: "15 Questions",
-            text: "The AIME exam is a 15 problem exam."
+            text: "The AIME exam is a 15 problem exam.",
+            alt: "15 questions in AIME exam outline"
           },
           {
             src: "/icons/general_icons/timer.svg",
             title: "180 Minutes",
-            text: "There are 180 minutes given in the exam."
+            text: "There are 180 minutes given in the exam.",
+            alt: "Timer showing 180 minutes for AIME exam"
           },
           {
             src: "/icons/general_icons/ease-in.svg",
             title: "Increasing Difficulty",
-            text: "Short-answer computational problems which increase in difficulty with each question."
+            text: "Short-answer computational problems which increase in difficulty with each question.",
+            alt: "Increasing difficulty icon representing AIME exam structure"
           }
         ].map((item, index) => (
           <motion.article
@@ -56,7 +60,7 @@ const AtAGlance = () => {
               height={10000}
               src={item.src}
               className="sm:w-[4.375vw] w-[10vw]"
-              alt={item.title}
+              alt={item.alt}
             />
             <h2 className="sm:text-[1.4vw] text-[5vw] text-white  mt-[3.125vw] font-semibold">
               {item.title}

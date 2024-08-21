@@ -37,7 +37,7 @@ const WhyEuclid = () => {
           width={10000}
           height={10000}
           src="/icons/smiley/smiley_yellow_blue.png"
-          alt="Smiling yellow and blue icon"
+          alt="Yellow and blue smiley face icon"
           className="sm:w-[41vw] w-[80vw] mt-[7vw]"
         />
       </motion.figure>
@@ -52,7 +52,7 @@ const WhyEuclid = () => {
             width={10000}
             height={10000}
             src="/icons/general_icons/computer.svg"
-            alt="Computer icon"
+            alt="Computer icon representing online learning"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">
@@ -76,7 +76,7 @@ const WhyEuclid = () => {
             width={10000}
             height={10000}
             src="/icons/general_icons/brain.svg"
-            alt="Brain icon"
+            alt="Brain icon representing deep understanding of concepts"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">
@@ -100,7 +100,7 @@ const WhyEuclid = () => {
             width={10000}
             height={10000}
             src="/icons/general_icons/community.svg"
-            alt="Community icon"
+            alt="Community icon representing student-focused learning"
             className="sm:w-[2.5vw] sm:h-[2.5vw] sm:block hidden"
           />
           <div className="flex flex-col sm:w-[24vw]">

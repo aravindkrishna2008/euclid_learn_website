@@ -37,15 +37,15 @@ const OfferingModal = ({ offering, keyConcepts, testingPractices, freeTutoringRe
     <section className="flex relative transition-all duration-300 flex-row gap-[0.625vw]">
       <h1>{offering}</h1>
       <Image
-        src="/icons/general_icons/info-circle.svg"
-        className={`sm:w-[1vw] w-[4vw] transition-all duration-300 cursor-pointer ${
-          show ? "hidden" : "block"
-        }`}
-        height={1000}
-        width={1000}
-        alt="Info"
-        onClick={() => setShow(true)}
-      />
+  src="/icons/general_icons/info-circle.svg"
+  className={`sm:w-[1vw] w-[4vw] transition-all duration-300 cursor-pointer ${
+    show ? "hidden" : "block"
+  }`}
+  height={1000}
+  width={1000}
+  alt="Information icon for more details"
+  onClick={() => setShow(true)}
+/>
 
       <motion.div
         ref={modalRef}

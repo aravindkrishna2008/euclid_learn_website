@@ -112,7 +112,7 @@ const Footer = ({ teacherClick, freeclick, freeTutoringRefClick, pricerefclick }
           </li>
           <li>
             <Link legacyBehavior href="https://www.youtube.com/@euclidlearn">
-              <p className="hover:underline">Youtube</p>
+              <p className="hover:underline">YouTube</p>
             </Link>
           </li>
           <li>
@@ -138,6 +138,7 @@ const Footer = ({ teacherClick, freeclick, freeTutoringRefClick, pricerefclick }
         width={10000}
         height={10000}
         src="/icons/smiley/footer.svg"
+        alt="Footer smiley face icon"
         className="w-[40vw] z-30 absolute right-[8vw] bottom-0 mt-[5vw]"
       />
       <div className="absolute bottom-[5.8vw]">
@@ -148,6 +149,7 @@ const Footer = ({ teacherClick, freeclick, freeTutoringRefClick, pricerefclick }
           width={10000}
           height={10000}
           src="/logo/logo2.svg"
+          alt="Euclid Learn logo"
           className="w-[7.5vw] mt-[2vw]"
         />
         <p className="mt-[2vw] text-white text-[0.8vw]">
