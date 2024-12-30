@@ -37,32 +37,26 @@ export default function RootLayout({ children }) {
               "hasPart": [
                 {
                   "@type": "WebPage",
-                  "url": "https://www.euclidlearn.com/ap",
-                  "name": "AP Tutoring",
+                  "url": "https://www.euclidlearn.com/",
+                  "name": "Programs",
                   "description":
-                    "Get fully prepared for your AP exams and master the material."
+                    "Top the prestigious AMC, USACO, Digital SAT "
                 },
                 {
                   "@type": "WebPage",
-                  "url": "https://www.euclidlearn.com/sat",
-                  "name": "SAT Private Tutoring",
+                  "url": "https://www.euclidlearn.com/",
+                  "name": "Resources",
                   "description":
-                    "Score higher on your SAT Exams with Euclid Learn or get your money back."
+                    "Access free testing material and lessons"
                 },
                 {
                   "@type": "WebPage",
-                  "url": "https://www.euclidlearn.com/aime",
+                  "url": "https://www.euclidlearn.com/",
                   "name": "Excel in AIME",
-                  "description":
-                    "Master the challenging AIME exam with specialized coaching and problem-solving techniques."
-                },
-                {
-                  "@type": "WebPage",
-                  "url": "https://www.euclidlearn.com/usaco",
-                  "name": "USA Computing Olympiad",
-                  "description":
-                    "Achieve higher USACO scores with personalized mentorship from our team of programming experts."
+                  "Schedules":
+                    "Kindly navigate to the Details/FAQ page"
                 }
+                
               ]
             }),
           }}
