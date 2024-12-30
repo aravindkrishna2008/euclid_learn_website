@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="id_sNyAoZTfvcg3UlpPeP0TrdBw8_lRZlBK4HztMexs" />
         <link rel="icon" href="/icons/smiley/smile_blue.svg" sizes="any" />
         {/* Add structured data */}
         <script
@@ -66,7 +67,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        <meta name="google-site-verification" content="id_sNyAoZTfvcg3UlpPeP0TrdBw8_lRZlBK4HztMexs" />
+       
       </head>
       <body>{children}</body>
     </html>
