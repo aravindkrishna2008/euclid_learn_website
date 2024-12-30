@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.euclidlearn.com
+
+# Sitemaps
+Sitemap: https://www.euclidlearn.com/sitemap.xml
