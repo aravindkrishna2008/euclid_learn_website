@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Euclid Learn",
   description:
-    "Euclid Learn - equitable and extensive training programs for students grades 6-12 for national and international math and computing olympiads.",
+    "Euclid Learn - accessible, all-encompassing training programs for gifted students grades 6-12 for national math and computing olympiads and standardized testing.",
 };
 
 export default function RootLayout({ children }) {
