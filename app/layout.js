@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        <meta name="google-site-verification" content="id_sNyAoZTfvcg3UlpPeP0TrdBw8_lRZlBK4HztMexs" />
       </head>
       <body>{children}</body>
     </html>
