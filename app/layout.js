@@ -53,14 +53,14 @@ export default function RootLayout({ children }) {
                   "url": "https://www.euclidlearn.com/aime",
                   "name": "Excel in AIME",
                   "description":
-                    "Master the challenging AIME exam with specialized coaching and problem-solving techniques.                    "
+                    "Master the challenging AIME exam with specialized coaching and problem-solving techniques."
                 },
                 {
                   "@type": "WebPage",
-                  "url": "https://www.euclidlearn.com/aime",
-                  "name": "Excel in AIME",
+                  "url": "https://www.euclidlearn.com/usaco",
+                  "name": "USA Computing Olympiad",
                   "description":
-                    "Master the challenging AIME exam with specialized coaching and problem-solving techniques.                    "
+                    "Achieve higher USACO scores with personalized mentorship from our team of programming experts."
                 }
               ]
             }),
