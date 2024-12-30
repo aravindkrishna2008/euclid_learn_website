@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Euclid Learn",
-  description: "Score higher on the SAT, AP Exams, AMC, USACO, Codeforces, and Tech Interviews with our expert guidance, coaching, and tutoring. ",
+  description: "Euclid Learn - equitable and extensive training programs for students grades 6-12 for national and international math and computing olympiads.",
 };
 //wewe
 export default function RootLayout({ children }) {
