@@ -141,7 +141,7 @@ const Quote = () => {
               alt="Quote Icon"
             />
             <p className="sm:text-[1.25vw] text-[4vw] font-light text-[#383A42] mt-[4vw] sm:mt-[1.25vw] w-[80vw] sm:w-[23vw] mx-auto">
-              Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can&apos;t believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Biology. If you find yourself in a similar situation, give him a try - I seriously can&apos;t recommend this guy enough.
+              Anirudh literally saved my academic career! I felt so lost and overwhelmed in my classes when April rolled around so I was convinced I would do terrible on the AP Exams. When a friend recommended Anirudh, I decided to give him a shot, and it turns out hes an AMAZING teacher. I still can&apos;t believe I scored a 5 on APUSH, Calculus AB and a 4 on AP Biology. If you find yourself in a similar situation, give him a try - I seriously can&apos;t recommend this geruy enough.
             </p>
             <footer className="flex flex-row mt-[4vw] sm:mt-[1.25vw]">
               <Image
