@@ -37,6 +37,20 @@ export default function USACO() {
 
   return (
     <>
+     <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Excel in AIME",
+    "description": "Master the challenging AIME exam with specialized coaching and problem-solving techniques.",
+    "url": "https://www.euclidlearn.com/aime",
+    "provider": {
+      "@type": "Organization",
+      "name": "Euclid Learn",
+      "url": "https://www.euclidlearn.com"
+    }
+  })}
+</script>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <header>
         <Navbar

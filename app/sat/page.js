@@ -43,6 +43,20 @@ export default function USACO() {
 
   return (
     <>
+     <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "SAT Private Tutoring",
+    "description": "Score higher on your SAT Exams with Euclid Learn or get your money back.",
+    "url": "https://www.euclidlearn.com/sat",
+    "provider": {
+      "@type": "Organization",
+      "name": "Euclid Learn",
+      "url": "https://www.euclidlearn.com"
+    }
+  })}
+</script>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <header>
         <Navbar
@@ -87,6 +101,7 @@ export default function USACO() {
       <footer>
         <Footer />
       </footer>
+
     </>
   );
 }

@@ -6,9 +6,31 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Euclid Learn",
-  description:
-    "Euclid Learn - accessible, all-encompassing training programs for gifted students grades 6-12 for national math and computing olympiads and standardized testing.",
-};
+  description: "Euclid Learn - accessible, all-encompassing training programs for gifted students grades 6-12 for national math and computing olympiads and standardized testing.",
+  keywords: "online academic coaching, student-oriented learning, personalized test preparation, one-on-one learning, private guidance for students, test preparation services, sat preparation, ap tutoring, aime preparation, usaco training, online sat preparation, online ap tutoring, online aime preparation, online usaco training, free initial consultation, affordable online test prep, high-quality test prep materials, mentorship for test success, customized study plans, google meet tutoring sessions  ",
+  openGraph: {
+    title: "Euclid Learn ",
+    description: "Expert training for USACO, AIME, SAT, and AP exams",
+    images: [
+      {
+        url: 'https://www.euclidlearn.com/logo/logo.svg',
+        width: 1200,
+        height: 630,
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Euclid Learn",
+    description: "Expert training for USACO, AIME, SAT, and AP exams",
+    images: ['https://www.euclidlearn.com/logo/logo.svg'],
+  },
+  alternates: {
+    canonical: 'https://www.euclidlearn.com'
+  }
+}
 
 export default function RootLayout({ children }) {
   return (

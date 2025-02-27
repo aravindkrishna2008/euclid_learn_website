@@ -39,6 +39,20 @@ export default function USACO() {
 
   return (
     <>
+     <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "USA Computing Olympiad",
+    "description": "Achieve higher USACO scores with personalized mentorship from our team of programming experts.",
+    "url": "https://www.euclidlearn.com/usaco",
+    "provider": {
+      "@type": "Organization",
+      "name": "Euclid Learn",
+      "url": "https://www.euclidlearn.com"
+    }
+  })}
+</script>
       <PopUp freeTutoringRefClick={freeTutoringRefClick} />
       <header>
         <Navbar

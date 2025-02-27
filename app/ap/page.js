@@ -72,6 +72,20 @@ export default function USACO() {
       <footer>
         <Footer />
       </footer>
+      <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AP Tutoring",
+    "description": "Get fully prepared for your AP exams and master the material.",
+    "url": "https://www.euclidlearn.com/ap",
+    "provider": {
+      "@type": "Organization",
+      "name": "Euclid Learn",
+      "url": "https://www.euclidlearn.com"
+    }
+  })}
+</script>
     </>
   );
 }
